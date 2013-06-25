@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -77,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,32 +97,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">UIRimsIdent.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UIRimsIdent_h</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UIRimsIdent_h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;UIRims.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_u_i_rims_ident.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_u_i_rims_ident.html" title="UIRims specialized for identification toolkit. ">UIRimsIdent</a> : <span class="keyword">public</span> <a class="code" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_u_i_rims_ident.html#a80ed5efe730d85c975dff7913b59ca6e" title="Constructor. ">UIRimsIdent</a>(LiquidCrystal* lcd, byte pinKeysAnalog,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                byte pinLight=13,<span class="keywordtype">int</span> pinSpeaker=-1);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_i_rims_ident.html#a6270131d71b510e793c1c0b5c29830d0" title="Show system identification screen on _lcd. ">showIdentScreen</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_i_rims_ident.html#a10a647ed731ccb1b1cb28a37319b003e" title="Set ident CV on identScreen. ">setIdentCV</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> controlValue, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ssrWindow);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_i_rims_ident.html#a965f4a9bd82d97cd691a289c69e44705" title="Set a new remaining time. ">setTime</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeSec, <span class="keywordtype">boolean</span> waitRefresh = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="_u_i_rims_ident_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef UIRimsIdent_h</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UIRimsIdent_h</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_u_i_rims_8h.html" title="UIRims class declaration. ">UIRims.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_u_i_rims_ident.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_u_i_rims_ident.html" title="UIRims specialized for identification toolkit. ">UIRimsIdent</a> : <span class="keyword">public</span> <a class="code" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_u_i_rims_ident.html#a80ed5efe730d85c975dff7913b59ca6e" title="Constructor. ">UIRimsIdent</a>(LiquidCrystal* lcd, byte pinKeysAnalog,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                byte pinLight=13,<span class="keywordtype">int</span> pinSpeaker=-1);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_i_rims_ident.html#a6270131d71b510e793c1c0b5c29830d0" title="Show system identification screen on _lcd. ">showIdentScreen</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_i_rims_ident.html#a10a647ed731ccb1b1cb28a37319b003e" title="Set ident CV on identScreen. ">setIdentCV</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> controlValue, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ssrWindow);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_i_rims_ident.html#a965f4a9bd82d97cd691a289c69e44705" title="Set a new remaining time. ">setTime</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeSec, <span class="keywordtype">boolean</span> waitRefresh = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 14:57:17 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:10:18 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

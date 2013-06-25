@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['screenswitchtime',['SCREENSWITCHTIME',['../_rims_8h.html#a6a5c2983e6011e0d53647dee104a8293',1,'Rims.h']]],
   ['setflow',['setFlow',['../class_u_i_rims.html#a2009f6982141e655b3284debcb0c35ef',1,'UIRims']]],
   ['setidentcv',['setIdentCV',['../class_u_i_rims_ident.html#a10a647ed731ccb1b1cb28a37319b003e',1,'UIRimsIdent']]],
   ['setinterruptflow',['setInterruptFlow',['../class_rims.html#a04eb45db9b265f8a3bc815fb1a181ab5',1,'Rims']]],
@@ -17,6 +18,7 @@ var searchData=
   ['showpumpwarning',['showPumpWarning',['../class_u_i_rims.html#aa70193364ce0f1aaf8cfee272c530ca0',1,'UIRims']]],
   ['showtempscreen',['showTempScreen',['../class_u_i_rims.html#aec36d9dd1b50e70a8a9ae2e3f711ec9e',1,'UIRims']]],
   ['showtimeflowscreen',['showTimeFlowScreen',['../class_u_i_rims.html#a57cfe8055845cd157a857aa647caa9b5',1,'UIRims']]],
+  ['ssrwindowsize',['SSRWINDOWSIZE',['../_rims_8h.html#a847381f6bf45c8c398dfe6f2aff10986',1,'Rims.h']]],
   ['startident',['startIdent',['../class_rims_ident.html#a35ce51db5ea26966f5da4a96483e6623',1,'RimsIdent']]],
   ['switchscreen',['switchScreen',['../class_u_i_rims.html#a54eeb18ff641f95c2e2692e6d1cc013a',1,'UIRims']]]
 ];
