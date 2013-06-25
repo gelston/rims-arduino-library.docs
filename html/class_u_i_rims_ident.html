@@ -118,13 +118,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a80ed5efe730d85c975dff7913b59ca6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a80ed5efe730d85c975dff7913b59ca6e">More...</a><br/></td></tr>
 <tr class="separator:a80ed5efe730d85c975dff7913b59ca6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6270131d71b510e793c1c0b5c29830d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6270131d71b510e793c1c0b5c29830d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showIdentScreen</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims_ident.html#a6270131d71b510e793c1c0b5c29830d0">showIdentScreen</a> ()</td></tr>
+<tr class="memdesc:a6270131d71b510e793c1c0b5c29830d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show system identification screen on _lcd. <br/></td></tr>
 <tr class="separator:a6270131d71b510e793c1c0b5c29830d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a647ed731ccb1b1cb28a37319b003e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10a647ed731ccb1b1cb28a37319b003e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIdentCV</b> (unsigned long controlValue, unsigned long ssrWindow)</td></tr>
+<tr class="memitem:a10a647ed731ccb1b1cb28a37319b003e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims_ident.html#a10a647ed731ccb1b1cb28a37319b003e">setIdentCV</a> (unsigned long controlValue, unsigned long ssrWindow)</td></tr>
+<tr class="memdesc:a10a647ed731ccb1b1cb28a37319b003e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ident CV on identScreen.  <a href="#a10a647ed731ccb1b1cb28a37319b003e">More...</a><br/></td></tr>
 <tr class="separator:a10a647ed731ccb1b1cb28a37319b003e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965f4a9bd82d97cd691a289c69e44705"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a965f4a9bd82d97cd691a289c69e44705"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTime</b> (unsigned int timeSec, boolean waitRefresh=true)</td></tr>
+<tr class="memitem:a965f4a9bd82d97cd691a289c69e44705"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims_ident.html#a965f4a9bd82d97cd691a289c69e44705">setTime</a> (unsigned int timeSec, boolean waitRefresh=true)</td></tr>
+<tr class="memdesc:a965f4a9bd82d97cd691a289c69e44705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new remaining time.  <a href="#a965f4a9bd82d97cd691a289c69e44705">More...</a><br/></td></tr>
 <tr class="separator:a965f4a9bd82d97cd691a289c69e44705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_u_i_rims"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_u_i_rims')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_u_i_rims.html">UIRims</a></td></tr>
 <tr class="memitem:afff007822ab95e825377e88f4103ed6e inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#afff007822ab95e825377e88f4103ed6e">UIRims</a> (LiquidCrystal *lcd, byte pinKeysAnalog, byte pinLight=13, int pinSpeaker=-1)</td></tr>
@@ -266,6 +267,78 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a10a647ed731ccb1b1cb28a37319b003e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIRimsIdent::setIdentCV </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>controlValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ssrWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set ident CV on identScreen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controlValue</td><td>: unsigned long. current CV between 0 to ssrWindow </td></tr>
+    <tr><td class="paramname">ssrWindow</td><td>: unsigned long. ssrWindow size in mSec. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a965f4a9bd82d97cd691a289c69e44705"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIRimsIdent::setTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeSec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>waitRefresh</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a new remaining time. </p>
+<p>If timeFlowScreen is shown, it will be updated on the lcd _lcd else it will be memorized for when it will be shown. If waitRefresh is true (default is true) it will wait LCDREFRESHTIME mSec before updating _lcd.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSec</td><td>: unsigned int. current CV between 0 to ssrWindow </td></tr>
+    <tr><td class="paramname">waitRefresh</td><td>: boolean. ssrWindow size in mSec. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/Francis/Documents/Arduino/libraries/rims/utility/<a class="el" href="_u_i_rims_ident_8h_source.html">UIRimsIdent.h</a></li>
 <li>C:/Users/Francis/Documents/Arduino/libraries/rims/utility/UIRimsIdent.cpp</li>
@@ -273,7 +346,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 14:22:28 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 14:54:04 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
