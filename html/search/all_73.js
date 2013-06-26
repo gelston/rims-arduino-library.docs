@@ -10,7 +10,7 @@ var searchData=
   ['settempsp',['setTempSP',['../class_u_i_rims.html#af190305e0a00424584c2190f85613fdb',1,'UIRims']]],
   ['setthermistor',['setThermistor',['../class_rims.html#a972b17ec148f68ac816ad8a4a29a802d',1,'Rims']]],
   ['settime',['setTime',['../class_u_i_rims.html#a98e9dac9567d721f3bed581d4db98b1f',1,'UIRims::setTime()'],['../class_u_i_rims_ident.html#a965f4a9bd82d97cd691a289c69e44705',1,'UIRimsIdent::setTime()']]],
-  ['settunningpid',['setTunningPID',['../class_rims.html#a44f0bc41de08e8f959ea33004a63e08e',1,'Rims']]],
+  ['settuningpid',['setTuningPID',['../class_rims.html#a744164fc6330449bcf66ea2672ed9e04',1,'Rims']]],
   ['showend',['showEnd',['../class_u_i_rims.html#a9979aa6144465caecc9f40b622355fb3',1,'UIRims']]],
   ['showerrorpv',['showErrorPV',['../class_u_i_rims.html#a71500e1cfcedd35f1b3b71a8873c2166',1,'UIRims']]],
   ['showheaterwarning',['showHeaterWarning',['../class_u_i_rims.html#adaeaed8aef1ab96fd3e5b74ac115b92e',1,'UIRims']]],
