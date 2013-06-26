@@ -159,6 +159,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a9e3674e586ac9fdeaba02f5905b48994"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a9e3674e586ac9fdeaba02f5905b48994">readKeysADC</a> (boolean waitNone=true)</td></tr>
 <tr class="memdesc:a9e3674e586ac9fdeaba02f5905b48994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read keys without software debouce.  <a href="#a9e3674e586ac9fdeaba02f5905b48994">More...</a><br/></td></tr>
 <tr class="separator:a9e3674e586ac9fdeaba02f5905b48994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528139cb2db1e7cde3d8daa6e579b8df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a528139cb2db1e7cde3d8daa6e579b8df">ring</a> (boolean state=true)</td></tr>
+<tr class="memdesc:a528139cb2db1e7cde3d8daa6e579b8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ring with given speaker setted with the Constructor.  <a href="#a528139cb2db1e7cde3d8daa6e579b8df">More...</a><br/></td></tr>
+<tr class="separator:a528139cb2db1e7cde3d8daa6e579b8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580605afd235a7e6041f4d99aef4285c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a580605afd235a7e6041f4d99aef4285c">askSetPoint</a> (float defaultVal)</td></tr>
 <tr class="memdesc:a580605afd235a7e6041f4d99aef4285c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask set point temperature with the UI.  <a href="#a580605afd235a7e6041f4d99aef4285c">More...</a><br/></td></tr>
 <tr class="separator:a580605afd235a7e6041f4d99aef4285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -749,7 +752,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 </div><div class="memdoc">
 
 <p>Ask batch size. </p>
-<dl class="section return"><dt>Returns</dt><dd>byte : 0 small batch, 1 double batch. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>byte : 0 simple batch, 1 double batch. </dd></dl>
 
 </div>
 </div>
@@ -825,6 +828,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>byte : KEYNONE, KEYUP, KEYDOWN, KEYLEFT, KEYRIGHT or KEYSELECT </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a528139cb2db1e7cde3d8daa6e579b8df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIRims::ring </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>state</em> = <code>true</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ring with given speaker setted with the Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>: boolean. If true, start buzz, if false stop buzz. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -997,13 +1024,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Francis/Documents/Arduino/libraries/rims/utility/<a class="el" href="_u_i_rims_8h_source.html">UIRims.h</a></li>
-<li>C:/Users/Francis/Documents/Arduino/libraries/rims/utility/<a class="el" href="_u_i_rims_8cpp.html">UIRims.cpp</a></li>
+<li>C:/Users/Francis/Dropbox/Arduino/libraries/rims/utility/<a class="el" href="_u_i_rims_8h_source.html">UIRims.h</a></li>
+<li>C:/Users/Francis/Dropbox/Arduino/libraries/rims/utility/<a class="el" href="_u_i_rims_8cpp.html">UIRims.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 16:38:38 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 22:33:20 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
