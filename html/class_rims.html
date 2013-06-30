@@ -148,16 +148,15 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab5e0dff0c1a6895a261e3e036100ad10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10">_initialize</a> ()</td></tr>
+<tr class="memitem:ab5e0dff0c1a6895a261e3e036100ad10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10">_initialize</a> ()</td></tr>
 <tr class="memdesc:ab5e0dff0c1a6895a261e3e036100ad10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a> instance before starting temperature regulation.  <a href="#ab5e0dff0c1a6895a261e3e036100ad10">More...</a><br/></td></tr>
 <tr class="separator:ab5e0dff0c1a6895a261e3e036100ad10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7997ca5ce25f9ccf8fff58074ffedeac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac">_iterate</a> ()</td></tr>
-<tr class="memdesc:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method called for temperature regulation at each iteration. <br/></td></tr>
+<tr class="memitem:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac">_iterate</a> ()</td></tr>
+<tr class="memdesc:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method called for temperature regulation at each iteration.  <a href="#a7997ca5ce25f9ccf8fff58074ffedeac">More...</a><br/></td></tr>
 <tr class="separator:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc142e4b28a8658c54369e7bce9a7a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#afc142e4b28a8658c54369e7bce9a7a75">_refreshTimer</a> ()</td></tr>
-<tr class="memdesc:afc142e4b28a8658c54369e7bce9a7a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh timer value.  <a href="#afc142e4b28a8658c54369e7bce9a7a75">More...</a><br/></td></tr>
-<tr class="separator:afc142e4b28a8658c54369e7bce9a7a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd9784f8564d28f177ddfede8edf6af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a5cd9784f8564d28f177ddfede8edf6af">_refreshTimer</a> (boolean verifyTemp=true)</td></tr>
+<tr class="memdesc:a5cd9784f8564d28f177ddfede8edf6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh timer value.  <a href="#a5cd9784f8564d28f177ddfede8edf6af">More...</a><br/></td></tr>
+<tr class="separator:a5cd9784f8564d28f177ddfede8edf6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d905079d252ad4f71b3dae4b481cdc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d905079d252ad4f71b3dae4b481cdc5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a7d905079d252ad4f71b3dae4b481cdc5">_refreshDisplay</a> ()</td></tr>
 <tr class="memdesc:a7d905079d252ad4f71b3dae4b481cdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh display used by <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a> instance. <br/></td></tr>
@@ -258,7 +257,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -273,9 +272,39 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 <li>Show heater switching warning </li>
 </ol>
 
+<p>Reimplemented in <a class="el" href="class_rims_ident.html#a128946a316b7ad7fb8524ec98db9cb87">RimsIdent</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="afc142e4b28a8658c54369e7bce9a7a75"></a>
+<a class="anchor" id="a7997ca5ce25f9ccf8fff58074ffedeac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rims::_iterate </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Main method called for temperature regulation at each iteration. </p>
+<p>At each PID calculation (at each PIDSAMPLETIME sec), datas is sent over Serial communication for logging purpose. </p>
+
+<p>Reimplemented in <a class="el" href="class_rims_ident.html#ac70202c7c0012653bfb81cdc19520a63">RimsIdent</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5cd9784f8564d28f177ddfede8edf6af"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -285,7 +314,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
         <tr>
           <td class="memname">void Rims::_refreshTimer </td>
           <td>(</td>
-          <td class="paramname">)</td><td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>verifyTemp</em> = <code>true</code>)</td><td></td>
           <td></td>
         </tr>
       </table>
@@ -556,7 +586,7 @@ Thermistor voltage divider circuit</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 27 2013 18:25:42 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 30 2013 13:30:19 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

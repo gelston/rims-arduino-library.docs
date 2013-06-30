@@ -8,5 +8,5 @@ var searchData=
   ['rimsident_2ecpp',['RimsIdent.cpp',['../_rims_ident_8cpp.html',1,'']]],
   ['rimsident_2eh',['RimsIdent.h',['../_rims_ident_8h.html',1,'']]],
   ['ring',['ring',['../class_u_i_rims.html#a528139cb2db1e7cde3d8daa6e579b8df',1,'UIRims']]],
-  ['run',['run',['../class_rims.html#a60650cdc19193c465d47b1f3ad72502f',1,'Rims']]]
+  ['run',['run',['../class_rims.html#a60650cdc19193c465d47b1f3ad72502f',1,'Rims::run()'],['../class_rims_ident.html#a025b025623474104f207f5e4e343174a',1,'RimsIdent::run()']]]
 ];

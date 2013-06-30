@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_rims_ident-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RimsIdent Class Reference</div>  </div>
@@ -118,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a795c913c96e00b8cfb3fbc9e52f2fdf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims_ident.html#a795c913c96e00b8cfb3fbc9e52f2fdf8">RimsIdent</a> (<a class="el" href="class_u_i_rims_ident.html">UIRimsIdent</a> *uiRimsIdent, byte analogPinTherm, byte ssrPin, double *currentTemp, double *ssrControl, double *settedTemp)</td></tr>
 <tr class="memdesc:a795c913c96e00b8cfb3fbc9e52f2fdf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consructor.  <a href="#a795c913c96e00b8cfb3fbc9e52f2fdf8">More...</a><br/></td></tr>
 <tr class="separator:a795c913c96e00b8cfb3fbc9e52f2fdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ce51db5ea26966f5da4a96483e6623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims_ident.html#a35ce51db5ea26966f5da4a96483e6623">startIdent</a> ()</td></tr>
-<tr class="memdesc:a35ce51db5ea26966f5da4a96483e6623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start identification procedure.  <a href="#a35ce51db5ea26966f5da4a96483e6623">More...</a><br/></td></tr>
-<tr class="separator:a35ce51db5ea26966f5da4a96483e6623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025b025623474104f207f5e4e343174a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims_ident.html#a025b025623474104f207f5e4e343174a">run</a> ()</td></tr>
+<tr class="memdesc:a025b025623474104f207f5e4e343174a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start identification procedure.  <a href="#a025b025623474104f207f5e4e343174a">More...</a><br/></td></tr>
+<tr class="separator:a025b025623474104f207f5e4e343174a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_rims"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_rims')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_rims.html">Rims</a></td></tr>
 <tr class="memitem:ac370295657d50fed766ccded3e7da76c inherit pub_methods_class_rims"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ac370295657d50fed766ccded3e7da76c">Rims</a> (<a class="el" href="class_u_i_rims.html">UIRims</a> *uiRims, byte analogPinTherm, byte ssrPin, double *currentTemp, double *ssrControl, double *settedTemp)</td></tr>
 <tr class="memdesc:ac370295657d50fed766ccded3e7da76c inherit pub_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ac370295657d50fed766ccded3e7da76c">More...</a><br/></td></tr>
@@ -151,19 +152,19 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memdesc:a25026943eb8ac76bfedab303008389e0 inherit pub_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get flow from hall-effect flow sensor. <br/></td></tr>
 <tr class="separator:a25026943eb8ac76bfedab303008389e0 inherit pub_methods_class_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a128946a316b7ad7fb8524ec98db9cb87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a128946a316b7ad7fb8524ec98db9cb87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims_ident.html#a128946a316b7ad7fb8524ec98db9cb87">_initialize</a> ()</td></tr>
+<tr class="memdesc:a128946a316b7ad7fb8524ec98db9cb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="class_rims_ident.html" title="Toolkits for process identification to facilitate PID tunning. ">RimsIdent</a> before iteration. <br/></td></tr>
+<tr class="separator:a128946a316b7ad7fb8524ec98db9cb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70202c7c0012653bfb81cdc19520a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims_ident.html#ac70202c7c0012653bfb81cdc19520a63">_iterate</a> ()</td></tr>
+<tr class="memdesc:ac70202c7c0012653bfb81cdc19520a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteration for <a class="el" href="class_rims_ident.html" title="Toolkits for process identification to facilitate PID tunning. ">RimsIdent</a> instance.  <a href="#ac70202c7c0012653bfb81cdc19520a63">More...</a><br/></td></tr>
+<tr class="separator:ac70202c7c0012653bfb81cdc19520a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_rims"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_rims')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_rims.html">Rims</a></td></tr>
-<tr class="memitem:ab5e0dff0c1a6895a261e3e036100ad10 inherit pro_methods_class_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10">_initialize</a> ()</td></tr>
-<tr class="memdesc:ab5e0dff0c1a6895a261e3e036100ad10 inherit pro_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a> instance before starting temperature regulation.  <a href="#ab5e0dff0c1a6895a261e3e036100ad10">More...</a><br/></td></tr>
-<tr class="separator:ab5e0dff0c1a6895a261e3e036100ad10 inherit pro_methods_class_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7997ca5ce25f9ccf8fff58074ffedeac inherit pro_methods_class_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7997ca5ce25f9ccf8fff58074ffedeac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac">_iterate</a> ()</td></tr>
-<tr class="memdesc:a7997ca5ce25f9ccf8fff58074ffedeac inherit pro_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method called for temperature regulation at each iteration. <br/></td></tr>
-<tr class="separator:a7997ca5ce25f9ccf8fff58074ffedeac inherit pro_methods_class_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc142e4b28a8658c54369e7bce9a7a75 inherit pro_methods_class_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#afc142e4b28a8658c54369e7bce9a7a75">_refreshTimer</a> ()</td></tr>
-<tr class="memdesc:afc142e4b28a8658c54369e7bce9a7a75 inherit pro_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh timer value.  <a href="#afc142e4b28a8658c54369e7bce9a7a75">More...</a><br/></td></tr>
-<tr class="separator:afc142e4b28a8658c54369e7bce9a7a75 inherit pro_methods_class_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd9784f8564d28f177ddfede8edf6af inherit pro_methods_class_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a5cd9784f8564d28f177ddfede8edf6af">_refreshTimer</a> (boolean verifyTemp=true)</td></tr>
+<tr class="memdesc:a5cd9784f8564d28f177ddfede8edf6af inherit pro_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh timer value.  <a href="#a5cd9784f8564d28f177ddfede8edf6af">More...</a><br/></td></tr>
+<tr class="separator:a5cd9784f8564d28f177ddfede8edf6af inherit pro_methods_class_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d905079d252ad4f71b3dae4b481cdc5 inherit pro_methods_class_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d905079d252ad4f71b3dae4b481cdc5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a7d905079d252ad4f71b3dae4b481cdc5">_refreshDisplay</a> ()</td></tr>
 <tr class="memdesc:a7d905079d252ad4f71b3dae4b481cdc5 inherit pro_methods_class_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh display used by <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a> instance. <br/></td></tr>
@@ -242,12 +243,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a35ce51db5ea26966f5da4a96483e6623"></a>
+<a class="anchor" id="ac70202c7c0012653bfb81cdc19520a63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RimsIdent::_iterate </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Iteration for <a class="el" href="class_rims_ident.html" title="Toolkits for process identification to facilitate PID tunning. ">RimsIdent</a> instance. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>: better handling of unconnected thermistor </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>: use std screen of <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac">Rims</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a025b025623474104f207f5e4e343174a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void RimsIdent::startIdent </td>
+          <td class="memname">void RimsIdent::run </td>
           <td>(</td>
           <td class="paramname">)</td><td></td>
           <td></td>
@@ -258,7 +288,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Start identification procedure. </p>
 <p>It will last 30 minutes. Step order is :</p>
 <ol type="1">
-<li>0-50% at t = 0 sec</li>
+<li>0-STEP1VALUE% at t = STEP1TIME sec</li>
 <li>50%-100% at t = 10 min</li>
 <li>100%-0% at t = 20 min</li>
 <li>end at t = 30 min</li>
@@ -275,7 +305,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 27 2013 18:25:43 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 30 2013 13:30:19 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
