@@ -3,7 +3,7 @@ var searchData=
   ['screenswitchtime',['SCREENSWITCHTIME',['../_rims_8h.html#a6a5c2983e6011e0d53647dee104a8293',1,'Rims.h']]],
   ['setflow',['setFlow',['../class_u_i_rims.html#a299094fe94c60f20f2de079515e54023',1,'UIRims']]],
   ['setidentcv',['setIdentCV',['../class_u_i_rims_ident.html#a10a647ed731ccb1b1cb28a37319b003e',1,'UIRimsIdent']]],
-  ['setinterruptflow',['setInterruptFlow',['../class_rims.html#a04eb45db9b265f8a3bc815fb1a181ab5',1,'Rims']]],
+  ['setinterruptflow',['setInterruptFlow',['../class_rims.html#adcffe846a80339cd8e956f4b2efa1ef2',1,'Rims']]],
   ['setpinled',['setPinLED',['../class_rims.html#a5756a8bf5ab82ad100038f62a0c38101',1,'Rims']]],
   ['setsetpointfilter',['setSetPointFilter',['../class_rims.html#a665337de0326cff19ec8eceb6be76e30',1,'Rims']]],
   ['settemppv',['setTempPV',['../class_u_i_rims.html#a03a193a09d60104f513afd54abfdf6c7',1,'UIRims']]],

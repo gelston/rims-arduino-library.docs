@@ -126,9 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5756a8bf5ab82ad100038f62a0c38101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a5756a8bf5ab82ad100038f62a0c38101">setPinLED</a> (byte pinLED)</td></tr>
 <tr class="memdesc:a5756a8bf5ab82ad100038f62a0c38101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pin for heater LED indicator.  <a href="#a5756a8bf5ab82ad100038f62a0c38101">More...</a><br/></td></tr>
 <tr class="separator:a5756a8bf5ab82ad100038f62a0c38101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04eb45db9b265f8a3bc815fb1a181ab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a04eb45db9b265f8a3bc815fb1a181ab5">setInterruptFlow</a> (byte interruptFlow, float flowFactor)</td></tr>
-<tr class="memdesc:a04eb45db9b265f8a3bc815fb1a181ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt function for flow sensor.  <a href="#a04eb45db9b265f8a3bc815fb1a181ab5">More...</a><br/></td></tr>
-<tr class="separator:a04eb45db9b265f8a3bc815fb1a181ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcffe846a80339cd8e956f4b2efa1ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#adcffe846a80339cd8e956f4b2efa1ef2">setInterruptFlow</a> (byte interruptFlow, float flowFactor, boolean stopOnCriticalFlow=true)</td></tr>
+<tr class="memdesc:adcffe846a80339cd8e956f4b2efa1ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt function for flow sensor.  <a href="#adcffe846a80339cd8e956f4b2efa1ef2">More...</a><br/></td></tr>
+<tr class="separator:adcffe846a80339cd8e956f4b2efa1ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744164fc6330449bcf66ea2672ed9e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a744164fc6330449bcf66ea2672ed9e04">setTuningPID</a> (double Kp, double Ki, double Kd, double tauFilter, byte batchSize=<a class="el" href="_rims_8h.html#a8403ef076d5ae845ca32914090b651e1">SIMPLEBATCH</a>)</td></tr>
 <tr class="memdesc:a744164fc6330449bcf66ea2672ed9e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tuning for PID object.  <a href="#a744164fc6330449bcf66ea2672ed9e04">More...</a><br/></td></tr>
 <tr class="separator:a744164fc6330449bcf66ea2672ed9e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,7 +367,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 
 </div>
 </div>
-<a class="anchor" id="a04eb45db9b265f8a3bc815fb1a181ab5"></a>
+<a class="anchor" id="adcffe846a80339cd8e956f4b2efa1ef2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -381,7 +381,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>flowFactor</em>&#160;</td>
+          <td class="paramname"><em>flowFactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>stopOnCriticalFlow</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -399,6 +405,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 \[ freq[Hz] = flowFactor * flow[L/min] \]
 </p>
  </td></tr>
+    <tr><td class="paramname">stopOnCriticalFlow</td><td>: boolean (default=true). If true, on <a class="el" href="class_rims.html#a25026943eb8ac76bfedab303008389e0" title="Get flow from hall-effect flow sensor. ">getFlow()</a> call, flow is &lt;= CRITICALFLOW, heater is turn off. Else flow mesurment doesn't influence heater action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -586,7 +593,7 @@ Thermistor voltage divider circuit</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2013 13:30:19 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 30 2013 16:34:13 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
