@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
-   &#160;<span id="projectnumber">v0.7</span>
+   &#160;<span id="projectnumber">v0.8</span>
    </div>
    <div id="projectbrief">Recirculation infusion mash system library for Arduino</div>
   </td>
@@ -175,7 +175,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Recirculation infusion mash system (RIMS) library for Arduino. </p>
 <dl class="section author"><dt>Author</dt><dd>Francis Gagnon</dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Only one <a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a> (or child) instance is allowed with flow sensor because of static method _isrFlowSensor() </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>Only one <a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a> (or child) instance is allowed with flow sensor because of static method _isrFlowSensor() </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac370295657d50fed766ccded3e7da76c"></a>
 <div class="memitem">
@@ -299,6 +299,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 
 <p>Main method called for temperature regulation at each iteration. </p>
 <p>At each PID calculation (at each PIDSAMPLETIME sec), datas is sent over Serial communication for logging purpose. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Verify if _controlVal filtered should be kept in separate variable </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_rims_ident.html#ac70202c7c0012653bfb81cdc19520a63">RimsIdent</a>.</p>
 
@@ -473,6 +474,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
   </table>
   </dd>
 </dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Verify filter output with simulink </dd></dl>
 
 </div>
 </div>
@@ -593,7 +595,7 @@ Thermistor voltage divider circuit</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 30 2013 16:34:13 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 1 2013 03:28:29 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
