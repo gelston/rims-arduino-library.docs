@@ -328,6 +328,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 
 <p>Refresh timer value. </p>
 <p>If error on temperature &gt;= MAXTEMPVAR, timer will not count down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verifyTemp</td><td>: boolean. If true, error on current temperature should not be greater than MAXTEMPVAR to count down. Else, current temperature is ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -580,7 +586,7 @@ Thermistor voltage divider circuit</div></div>
     <tr><td class="paramname">Ki</td><td>: float. Integral gain. </td></tr>
     <tr><td class="paramname">Kd</td><td>: float. Derivative gain. </td></tr>
     <tr><td class="paramname">tauFilter</td><td>: float. PID output filter time constant in sec. </td></tr>
-    <tr><td class="paramname">batchSize</td><td>: byte (default=0). Specify which of the 2 regulators to setup, if needed. </td></tr>
+    <tr><td class="paramname">batchSize</td><td>: byte (default=SIMPLEBATCH). SIMPLEBATCH or DOUBLEBATCH. Specify which of the 2 regulators to setup, if needed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -594,7 +600,7 @@ Thermistor voltage divider circuit</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 00:35:24 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 2 2013 13:19:39 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
