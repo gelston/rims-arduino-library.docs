@@ -45,7 +45,7 @@ PROJECT_BRIEF          = "Recirculation infusion mash system library for Arduino
 # exceed 55 pixels and the maximum width should not exceed 200 pixels. 
 # Doxygen will copy the logo to the output directory.
 
-PROJECT_LOGO           = C:/Users/Francis/Dropbox/Arduino/libraries/rims/docs/logo.png
+PROJECT_LOGO           = /home/francis/Dropbox/Arduino/libraries/rims/docs/logo.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) 
 # base path where the generated documentation will be put. 
