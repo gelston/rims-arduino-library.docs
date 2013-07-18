@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">Recirculation infusion mash system library for Arduino</div>
   </td>
@@ -168,9 +168,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4d41f8d7a401cb9385d756d100fb3bea"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a4d41f8d7a401cb9385d756d100fb3bea">askTime</a> (unsigned int defaultVal)</td></tr>
 <tr class="memdesc:a4d41f8d7a401cb9385d756d100fb3bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask timer time on the UI.  <a href="#a4d41f8d7a401cb9385d756d100fb3bea">More...</a><br/></td></tr>
 <tr class="separator:a4d41f8d7a401cb9385d756d100fb3bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951e77559dcf36f558814c89ca6492c1"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a951e77559dcf36f558814c89ca6492c1">askBatchSize</a> ()</td></tr>
-<tr class="memdesc:a951e77559dcf36f558814c89ca6492c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask batch size.  <a href="#a951e77559dcf36f558814c89ca6492c1">More...</a><br/></td></tr>
-<tr class="separator:a951e77559dcf36f558814c89ca6492c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e34a0a4f7c240f618dcaf7b3c635c64"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a2e34a0a4f7c240f618dcaf7b3c635c64">askMashWater</a> (int mashWaterValues[])</td></tr>
+<tr class="memdesc:a2e34a0a4f7c240f618dcaf7b3c635c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask mash water quantity (4 choices max).  <a href="#a2e34a0a4f7c240f618dcaf7b3c635c64">More...</a><br/></td></tr>
+<tr class="separator:a2e34a0a4f7c240f618dcaf7b3c635c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71500e1cfcedd35f1b3b71a8873c2166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a71500e1cfcedd35f1b3b71a8873c2166">showErrorPV</a> (String mess)</td></tr>
 <tr class="memdesc:a71500e1cfcedd35f1b3b71a8873c2166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show error mess (2 chars max) for the process value on _lcd.  <a href="#a71500e1cfcedd35f1b3b71a8873c2166">More...</a><br/></td></tr>
 <tr class="separator:a71500e1cfcedd35f1b3b71a8873c2166"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -738,21 +738,28 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 
 </div>
 </div>
-<a class="anchor" id="a951e77559dcf36f558814c89ca6492c1"></a>
+<a class="anchor" id="a2e34a0a4f7c240f618dcaf7b3c635c64"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">byte UIRims::askBatchSize </td>
+          <td class="memname">byte UIRims::askMashWater </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mashWaterValues</em>[]</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ask batch size. </p>
-<dl class="section return"><dt>Returns</dt><dd>byte : 0 simple batch, 1 double batch. </dd></dl>
+<p>Ask mash water quantity (4 choices max). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mashWaterValues</td><td>: int[4]. Array that contain different choices for mash water quantity. If less than 4 is needed, the rest should be setted to -1. All values should be between 0 L and 99 L. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>byte : 0 to 4. Index of the selected mash water quantity. </dd></dl>
 
 </div>
 </div>
@@ -996,7 +1003,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 18 2013 13:52:08 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 18 2013 17:50:58 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
