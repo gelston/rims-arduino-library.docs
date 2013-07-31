@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3</span>
    </div>
    <div id="projectbrief">Recirculation infusion mash system library for Arduino</div>
   </td>
@@ -152,10 +152,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a54eeb18ff641f95c2e2692e6d1cc013a">switchScreen</a> ()</td></tr>
 <tr class="memdesc:a54eeb18ff641f95c2e2692e6d1cc013a inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle between tempScreen and timeFlowScreen on _lcd. <br/></td></tr>
 <tr class="separator:a54eeb18ff641f95c2e2692e6d1cc013a inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9979aa6144465caecc9f40b622355fb3 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9979aa6144465caecc9f40b622355fb3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a9979aa6144465caecc9f40b622355fb3">showEnd</a> ()</td></tr>
-<tr class="memdesc:a9979aa6144465caecc9f40b622355fb3 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the ending screen. <br/></td></tr>
-<tr class="separator:a9979aa6144465caecc9f40b622355fb3 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3978afb8709c52616520cf1a5fe604b7 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a3978afb8709c52616520cf1a5fe604b7">setTempSP</a> (float tempCelcius)</td></tr>
 <tr class="memdesc:a3978afb8709c52616520cf1a5fe604b7 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new set point temperature.  <a href="#a3978afb8709c52616520cf1a5fe604b7">More...</a><br/></td></tr>
 <tr class="separator:a3978afb8709c52616520cf1a5fe604b7 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,12 +161,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a299094fe94c60f20f2de079515e54023 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a299094fe94c60f20f2de079515e54023">setFlow</a> (float flow)</td></tr>
 <tr class="memdesc:a299094fe94c60f20f2de079515e54023 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new flow value.  <a href="#a299094fe94c60f20f2de079515e54023">More...</a><br/></td></tr>
 <tr class="separator:a299094fe94c60f20f2de079515e54023 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f38507717e82dccdce045628b8b91d inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a11f38507717e82dccdce045628b8b91d">setFlowBounds</a> (float lowBound, float upBound)</td></tr>
+<tr class="memdesc:a11f38507717e82dccdce045628b8b91d inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bounds for accepted flow rate.  <a href="#a11f38507717e82dccdce045628b8b91d">More...</a><br/></td></tr>
+<tr class="separator:a11f38507717e82dccdce045628b8b91d inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3674e586ac9fdeaba02f5905b48994 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a9e3674e586ac9fdeaba02f5905b48994">readKeysADC</a> (boolean waitNone=true)</td></tr>
 <tr class="memdesc:a9e3674e586ac9fdeaba02f5905b48994 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read keys without software debouce.  <a href="#a9e3674e586ac9fdeaba02f5905b48994">More...</a><br/></td></tr>
 <tr class="separator:a9e3674e586ac9fdeaba02f5905b48994 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0102be91ebc9d14520528af0e2cbc577 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a0102be91ebc9d14520528af0e2cbc577">timerRunningChar</a> (boolean state)</td></tr>
+<tr class="memdesc:a0102be91ebc9d14520528af0e2cbc577 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show blinking char next to remaining time.  <a href="#a0102be91ebc9d14520528af0e2cbc577">More...</a><br/></td></tr>
+<tr class="separator:a0102be91ebc9d14520528af0e2cbc577 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528139cb2db1e7cde3d8daa6e579b8df inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a528139cb2db1e7cde3d8daa6e579b8df">ring</a> (boolean state=true)</td></tr>
 <tr class="memdesc:a528139cb2db1e7cde3d8daa6e579b8df inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ring with given speaker setted with the Constructor.  <a href="#a528139cb2db1e7cde3d8daa6e579b8df">More...</a><br/></td></tr>
 <tr class="separator:a528139cb2db1e7cde3d8daa6e579b8df inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eeef27f03378117d298794a44595006 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a2eeef27f03378117d298794a44595006">lcdLight</a> (boolean state=true)</td></tr>
+<tr class="memdesc:a2eeef27f03378117d298794a44595006 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on/off the LCD backlighting.  <a href="#a2eeef27f03378117d298794a44595006">More...</a><br/></td></tr>
+<tr class="separator:a2eeef27f03378117d298794a44595006 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71500e1cfcedd35f1b3b71a8873c2166 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a71500e1cfcedd35f1b3b71a8873c2166">showErrorPV</a> (String mess)</td></tr>
+<tr class="memdesc:a71500e1cfcedd35f1b3b71a8873c2166 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show error mess (2 chars max) for the process value on _lcd.  <a href="#a71500e1cfcedd35f1b3b71a8873c2166">More...</a><br/></td></tr>
+<tr class="separator:a71500e1cfcedd35f1b3b71a8873c2166 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580605afd235a7e6041f4d99aef4285c inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a580605afd235a7e6041f4d99aef4285c">askSetPoint</a> (float defaultVal)</td></tr>
 <tr class="memdesc:a580605afd235a7e6041f4d99aef4285c inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask set point temperature with the UI.  <a href="#a580605afd235a7e6041f4d99aef4285c">More...</a><br/></td></tr>
 <tr class="separator:a580605afd235a7e6041f4d99aef4285c inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,9 +188,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a2e34a0a4f7c240f618dcaf7b3c635c64 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a2e34a0a4f7c240f618dcaf7b3c635c64">askMashWater</a> (int mashWaterValues[])</td></tr>
 <tr class="memdesc:a2e34a0a4f7c240f618dcaf7b3c635c64 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask mash water quantity (4 choices max).  <a href="#a2e34a0a4f7c240f618dcaf7b3c635c64">More...</a><br/></td></tr>
 <tr class="separator:a2e34a0a4f7c240f618dcaf7b3c635c64 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71500e1cfcedd35f1b3b71a8873c2166 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a71500e1cfcedd35f1b3b71a8873c2166">showErrorPV</a> (String mess)</td></tr>
-<tr class="memdesc:a71500e1cfcedd35f1b3b71a8873c2166 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show error mess (2 chars max) for the process value on _lcd.  <a href="#a71500e1cfcedd35f1b3b71a8873c2166">More...</a><br/></td></tr>
-<tr class="separator:a71500e1cfcedd35f1b3b71a8873c2166 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -346,7 +351,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 18 2013 18:33:34 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 31 2013 01:37:38 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
