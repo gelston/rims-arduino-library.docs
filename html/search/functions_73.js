@@ -14,6 +14,7 @@ var searchData=
   ['showheaterwarning',['showHeaterWarning',['../class_u_i_rims.html#adaeaed8aef1ab96fd3e5b74ac115b92e',1,'UIRims']]],
   ['showidentscreen',['showIdentScreen',['../class_u_i_rims_ident.html#a6270131d71b510e793c1c0b5c29830d0',1,'UIRimsIdent']]],
   ['showpumpwarning',['showPumpWarning',['../class_u_i_rims.html#aa70193364ce0f1aaf8cfee272c530ca0',1,'UIRims']]],
+  ['showserialwarning',['showSerialWarning',['../class_u_i_rims_ident.html#ae1282fa304be7c551d0079899e805f5a',1,'UIRimsIdent']]],
   ['showtempscreen',['showTempScreen',['../class_u_i_rims.html#aec36d9dd1b50e70a8a9ae2e3f711ec9e',1,'UIRims']]],
   ['showtimeflowscreen',['showTimeFlowScreen',['../class_u_i_rims.html#a57cfe8055845cd157a857aa647caa9b5',1,'UIRims']]],
   ['stopheating',['stopHeating',['../class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753',1,'Rims']]],
