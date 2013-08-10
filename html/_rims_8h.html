@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
-   &#160;<span id="projectnumber">v1.4</span>
+   &#160;<span id="projectnumber">v1.5</span>
    </div>
    <div id="projectbrief">Recirculation infusion mash system library for Arduino</div>
   </td>
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;Arduino.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_u_i_rims_8h_source.html">utility/UIRims.h</a>&quot;</code><br/>
-<code>#include &quot;utility/PID_v1.h&quot;</code><br/>
+<code>#include &quot;utility/PID_v1mod.h&quot;</code><br/>
 </div>
 <p><a href="_rims_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -113,10 +113,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3932330618109035126fbe18b4f3a338"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3932330618109035126fbe18b4f3a338"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a3932330618109035126fbe18b4f3a338">PIDSAMPLETIME</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="memdesc:a3932330618109035126fbe18b4f3a338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample time for PID. Same time used for LCD refresh rate and data log rate [mSec]. <br/></td></tr>
-<tr class="separator:a3932330618109035126fbe18b4f3a338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755b9528bf80376f0476829e8078a0da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a755b9528bf80376f0476829e8078a0da"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a755b9528bf80376f0476829e8078a0da">SAMPLETIME</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a755b9528bf80376f0476829e8078a0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample time for <a class="el" href="class_p_i_d.html">PID</a>. Same time used for LCD refresh rate and data log rate [mSec]. <br/></td></tr>
+<tr class="separator:a755b9528bf80376f0476829e8078a0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847381f6bf45c8c398dfe6f2aff10986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a847381f6bf45c8c398dfe6f2aff10986"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a847381f6bf45c8c398dfe6f2aff10986">SSRWINDOWSIZE</a>&#160;&#160;&#160;5000</td></tr>
 <tr class="memdesc:a847381f6bf45c8c398dfe6f2aff10986"><td class="mdescLeft">&#160;</td><td class="mdescRight">solid state relay window size [mSec] <br/></td></tr>
@@ -126,8 +126,8 @@ Macros</h2></td></tr>
 <tr class="memdesc:ae9c41ce8eb83b29271bfe9fa42d8f476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default set point on <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library.">UIRims</a> [celcius]. <br/></td></tr>
 <tr class="separator:ae9c41ce8eb83b29271bfe9fa42d8f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c20fa161321bf04ecd94be0c3a64f4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c20fa161321bf04ecd94be0c3a64f4f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a6c20fa161321bf04ecd94be0c3a64f4f">DEFAULTTIME</a>&#160;&#160;&#160;5400</td></tr>
-<tr class="memdesc:a6c20fa161321bf04ecd94be0c3a64f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default timer time on <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library.">UIRims</a> [sec]. <br/></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a6c20fa161321bf04ecd94be0c3a64f4f">DEFAULTTIME</a>&#160;&#160;&#160;5400000</td></tr>
+<tr class="memdesc:a6c20fa161321bf04ecd94be0c3a64f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default timer time on <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library.">UIRims</a> [mSec]. <br/></td></tr>
 <tr class="separator:a6c20fa161321bf04ecd94be0c3a64f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc75e78d4323155c2112d2a9c8eade79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc75e78d4323155c2112d2a9c8eade79"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULTSTEINHART0</b>&#160;&#160;&#160;0.001</td></tr>
@@ -171,7 +171,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 2 2013 13:10:31 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 10 2013 11:39:11 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

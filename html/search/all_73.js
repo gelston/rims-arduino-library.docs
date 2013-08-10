@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sampletime',['SAMPLETIME',['../_rims_8h.html#a755b9528bf80376f0476829e8078a0da',1,'Rims.h']]],
   ['screenswitchtime',['SCREENSWITCHTIME',['../_rims_8h.html#a6a5c2983e6011e0d53647dee104a8293',1,'Rims.h']]],
   ['setflow',['setFlow',['../class_u_i_rims.html#a8950399811464d8d1b3b3a2b85a0c358',1,'UIRims']]],
   ['setflowbounds',['setFlowBounds',['../class_u_i_rims.html#a11f38507717e82dccdce045628b8b91d',1,'UIRims']]],

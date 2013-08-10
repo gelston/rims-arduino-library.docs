@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pidsampletime',['PIDSAMPLETIME',['../_rims_8h.html#a3932330618109035126fbe18b4f3a338',1,'Rims.h']]]
+  ['pid',['PID',['../class_p_i_d.html',1,'']]]
 ];
