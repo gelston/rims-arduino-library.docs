@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
-   &#160;<span id="projectnumber">v1.5.1</span>
+   &#160;<span id="projectnumber">v1.6.1</span>
    </div>
    <div id="projectbrief">Recirculation infusion mash system library for Arduino</div>
   </td>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt function for flow sensor.  <a href="#adbae0aed5b4a4a1f65d0acdb25f2f3cd">More...</a><br/></td></tr>
 <tr class="separator:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca8887b7291dc0e013042e0c17fef31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31">setTuningPID</a> (double Kp, double Ki, double Kd, double tauFilter, int mashWaterQty=-1)</td></tr>
-<tr class="memdesc:a6ca8887b7291dc0e013042e0c17fef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tuning for <a class="el" href="class_p_i_d.html">PID</a> object.  <a href="#a6ca8887b7291dc0e013042e0c17fef31">More...</a><br/></td></tr>
+<tr class="memdesc:a6ca8887b7291dc0e013042e0c17fef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tuning for PID object.  <a href="#a6ca8887b7291dc0e013042e0c17fef31">More...</a><br/></td></tr>
 <tr class="separator:a6ca8887b7291dc0e013042e0c17fef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ebaf110340d939d1e5bccdb1fd5fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a26ebaf110340d939d1e5bccdb1fd5fcc">setSetPointFilter</a> (double tauFilter, int mashWaterQty=-1)</td></tr>
 <tr class="memdesc:a26ebaf110340d939d1e5bccdb1fd5fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Set Point filter.  <a href="#a26ebaf110340d939d1e5bccdb1fd5fcc">More...</a><br/></td></tr>
@@ -146,7 +146,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memdesc:a25026943eb8ac76bfedab303008389e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get flow from hall-effect flow sensor. <br/></td></tr>
 <tr class="separator:a25026943eb8ac76bfedab303008389e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678aecfc1cef4220f40ccf1bb65aa753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753">stopHeating</a> (boolean state)</td></tr>
-<tr class="memdesc:a678aecfc1cef4220f40ccf1bb65aa753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop heater no matter what <a class="el" href="class_p_i_d.html">PID</a> output.  <a href="#a678aecfc1cef4220f40ccf1bb65aa753">More...</a><br/></td></tr>
+<tr class="memdesc:a678aecfc1cef4220f40ccf1bb65aa753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop heater no matter what PID output.  <a href="#a678aecfc1cef4220f40ccf1bb65aa753">More...</a><br/></td></tr>
 <tr class="separator:a678aecfc1cef4220f40ccf1bb65aa753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -158,7 +158,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main method called for temperature regulation at each iteration.  <a href="#a7997ca5ce25f9ccf8fff58074ffedeac">More...</a><br/></td></tr>
 <tr class="separator:a7997ca5ce25f9ccf8fff58074ffedeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa509932175d1b91d5c01052d82658f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#aa509932175d1b91d5c01052d82658f69">_refreshPID</a> ()</td></tr>
-<tr class="memdesc:aa509932175d1b91d5c01052d82658f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh <a class="el" href="class_p_i_d.html">PID</a> value with set point filter and pid filter if setted.  <a href="#aa509932175d1b91d5c01052d82658f69">More...</a><br/></td></tr>
+<tr class="memdesc:aa509932175d1b91d5c01052d82658f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh PID value with set point filter and pid filter if setted.  <a href="#aa509932175d1b91d5c01052d82658f69">More...</a><br/></td></tr>
 <tr class="separator:aa509932175d1b91d5c01052d82658f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cd9784f8564d28f177ddfede8edf6af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a5cd9784f8564d28f177ddfede8edf6af">_refreshTimer</a> (boolean verifyTemp=true)</td></tr>
 <tr class="memdesc:a5cd9784f8564d28f177ddfede8edf6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh timer value.  <a href="#a5cd9784f8564d28f177ddfede8edf6af">More...</a><br/></td></tr>
@@ -304,7 +304,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 </div><div class="memdoc">
 
 <p>Main method called for temperature regulation at each iteration. </p>
-<p>At each <a class="el" href="class_p_i_d.html">PID</a> calculation (at each SAMPLETIME sec), datas is sent over Serial communication for logging purpose. </p>
+<p>At each PID calculation (at each SAMPLETIME sec), datas is sent over Serial communication for logging purpose. </p>
 
 <p>Reimplemented in <a class="el" href="class_rims_ident.html#ac70202c7c0012653bfb81cdc19520a63">RimsIdent</a>.</p>
 
@@ -331,8 +331,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Refresh <a class="el" href="class_p_i_d.html">PID</a> value with set point filter and pid filter if setted. </p>
-<p>Must be called at each <a class="el" href="class_p_i_d.html">PID</a> sample time. </p>
+<p>Refresh PID value with set point filter and pid filter if setted. </p>
+<p>Must be called at each PID sample time. </p>
 
 </div>
 </div>
@@ -619,19 +619,33 @@ Thermistor voltage divider circuit</div></div>
       </table>
 </div><div class="memdoc">
 
-<p>Set tuning for <a class="el" href="class_p_i_d.html">PID</a> object. </p>
+<p>Set tuning for PID object. </p>
 <p>Algorithm is in parallel form i.e. : </p>
 <p class="formulaDsp">
-\[ G_{c}(s) = [K_{p}+\frac{K_{i}}{s}+K_{d}s]\times\frac{1}{Ts+1} \]
+\[ G_{c}(s) = K_{p}+\frac{K_{i}}{s}+\frac{K_{d}s}{Ts+1} \]
 </p>
-<p> Where \(T=tauFilter[sec]\) For more information : <a href="http://playground.arduino.cc/Code/PIDLibrary">http://playground.arduino.cc/Code/PIDLibrary</a></p>
+<p> Where \(T=tauFilter[sec]\). It can be set to the same value as a PID output filter.</p>
+<p>In practice, a good value of derivative filter is : </p>
+<p class="formulaDsp">
+\[ T = \frac{K_{d}}{10} \]
+</p>
+<p>For more information : <a href="http://playground.arduino.cc/Code/PIDLibrary">http://playground.arduino.cc/Code/PIDLibrary</a></p>
+<p>For anti-windup, integration static saturation was replaced by <b>integration clamping</b>. Basically, it stop integration at a smarter time than "if output limit is reached".</p>
+<div class="image">
+<img src="pid.png" alt="pid.png"/>
+<div class="caption">
+Full PID block diagram</div></div>
+ <div class="image">
+<img src="clamping.png" alt="clamping.png"/>
+<div class="caption">
+Integration clamping diagram</div></div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Kp</td><td>: float. Propotionnal gain </td></tr>
     <tr><td class="paramname">Ki</td><td>: float. Integral gain. </td></tr>
     <tr><td class="paramname">Kd</td><td>: float. Derivative gain. </td></tr>
-    <tr><td class="paramname">tauFilter</td><td>: float. <a class="el" href="class_p_i_d.html">PID</a> output filter time constant in sec. </td></tr>
-    <tr><td class="paramname">mashWaterQty</td><td>: int (default=-1). If multiple regulators is needed, set this parameter to mash water volume in liter. This mash water volume will be associated to this <a class="el" href="class_p_i_d.html">PID</a>. Total of 4 regulators is allowed (with different mash water volume). </td></tr>
+    <tr><td class="paramname">tauFilter</td><td>: float. Derivative filter time constant in sec. </td></tr>
+    <tr><td class="paramname">mashWaterQty</td><td>: int (default=-1). If multiple regulators is needed, set this parameter to mash water volume in liter. This mash water volume will be associated to this PID. Total of 4 regulators is allowed (with different mash water volume). </td></tr>
   </table>
   </dd>
 </dl>
@@ -652,7 +666,7 @@ Thermistor voltage divider circuit</div></div>
       </table>
 </div><div class="memdoc">
 
-<p>Stop heater no matter what <a class="el" href="class_p_i_d.html">PID</a> output. </p>
+<p>Stop heater no matter what PID output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>: boolean. If true, heater is shut off. Else, heater is turned on. </td></tr>
@@ -669,7 +683,7 @@ Thermistor voltage divider circuit</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 11 2013 18:17:17 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 18 2013 15:40:24 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
