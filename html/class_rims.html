@@ -630,7 +630,7 @@ Thermistor voltage divider circuit</div></div>
 \[ T = \frac{K_{d}}{10} \]
 </p>
 <p>For more information : <a href="http://playground.arduino.cc/Code/PIDLibrary">http://playground.arduino.cc/Code/PIDLibrary</a></p>
-<p>For anti-windup, integration static saturation was replaced by <b>integration clamping</b>. Basically, it stop integration at a smarter time than "if limit is reached at the output of the integrator". More precisely, it stop integration if <b>limit is reached at the ouput the PID</b> <em>AND</em> if <b>the temperature error and and the PID output have the same sign.</b></p>
+<p>For anti-windup, integration static saturation was replaced by <b>integration clamping</b>. Basically, it stop integration at a smarter time than "if limit is reached at the output of the integrator". More precisely, it stop integration <b>if limit is reached at the ouput of the PID</b> <em>AND</em> <b>if the temperature error and and the PID output have the same sign.</b></p>
 <div class="image">
 <img src="pid.png" alt="pid.png"/>
 <div class="caption">
@@ -683,7 +683,7 @@ Integration clamping diagram</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 4 2013 13:48:22 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 4 2013 13:54:00 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
