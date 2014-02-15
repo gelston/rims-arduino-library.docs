@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,7 +118,7 @@ Inheritance diagram for Rims:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac370295657d50fed766ccded3e7da76c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ac370295657d50fed766ccded3e7da76c">Rims</a> (<a class="el" href="class_u_i_rims.html">UIRims</a> *uiRims, byte analogPinTherm, byte ssrPin, double *currentTemp, double *ssrControl, double *settedTemp)</td></tr>
-<tr class="memdesc:ac370295657d50fed766ccded3e7da76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ac370295657d50fed766ccded3e7da76c">More...</a><br/></td></tr>
+<tr class="memdesc:ac370295657d50fed766ccded3e7da76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR for flow sensor.  <a href="#ac370295657d50fed766ccded3e7da76c">More...</a><br/></td></tr>
 <tr class="separator:ac370295657d50fed766ccded3e7da76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972b17ec148f68ac816ad8a4a29a802d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a972b17ec148f68ac816ad8a4a29a802d">setThermistor</a> (float steinhartCoefs[], float res1, float fineTune=0)</td></tr>
 <tr class="memdesc:a972b17ec148f68ac816ad8a4a29a802d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thermistor parameters.  <a href="#a972b17ec148f68ac816ad8a4a29a802d">More...</a><br/></td></tr>
@@ -129,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#adbae0aed5b4a4a1f65d0acdb25f2f3cd">setInterruptFlow</a> (byte interruptFlow, float flowFactor, float lowBound=<a class="el" href="_rims_8h.html#ad7811141682133b63e27fa4b248cc8c1">DEFAULTFLOWLOWBOUND</a>, float upBound=<a class="el" href="_rims_8h.html#a0a84a750b7716d5d19303e7256dd2556">DEFAULTFLOWUPBOUND</a>, boolean stopOnCriticalFlow=true)</td></tr>
 <tr class="memdesc:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt function for flow sensor.  <a href="#adbae0aed5b4a4a1f65d0acdb25f2f3cd">More...</a><br/></td></tr>
 <tr class="separator:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8653768bed0df24a0963cbec6aed09ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a8653768bed0df24a0963cbec6aed09ce">setHeaterPowerDetect</a> (byte pinHeaterVolt)</td></tr>
+<tr class="memdesc:a8653768bed0df24a0963cbec6aed09ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pin to detect if there is voltage applied on heater.  <a href="#a8653768bed0df24a0963cbec6aed09ce">More...</a><br/></td></tr>
+<tr class="separator:a8653768bed0df24a0963cbec6aed09ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca8887b7291dc0e013042e0c17fef31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31">setTuningPID</a> (double Kp, double Ki, double Kd, double tauFilter, int mashWaterQty=-1)</td></tr>
 <tr class="memdesc:a6ca8887b7291dc0e013042e0c17fef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tuning for PID object.  <a href="#a6ca8887b7291dc0e013042e0c17fef31">More...</a><br/></td></tr>
 <tr class="separator:a6ca8887b7291dc0e013042e0c17fef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,10 @@ Public Member Functions</h2></td></tr>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a25026943eb8ac76bfedab303008389e0">getFlow</a> ()</td></tr>
 <tr class="memdesc:a25026943eb8ac76bfedab303008389e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get flow from hall-effect flow sensor. <br/></td></tr>
 <tr class="separator:a25026943eb8ac76bfedab303008389e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69c666509eb1fc0a22cbed6a20f640b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69c666509eb1fc0a22cbed6a20f640b"></a>
+boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#af69c666509eb1fc0a22cbed6a20f640b">getHeaterVoltage</a> ()</td></tr>
+<tr class="memdesc:af69c666509eb1fc0a22cbed6a20f640b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if heater is powered or not. <br/></td></tr>
+<tr class="separator:af69c666509eb1fc0a22cbed6a20f640b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678aecfc1cef4220f40ccf1bb65aa753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753">stopHeating</a> (boolean state)</td></tr>
 <tr class="memdesc:a678aecfc1cef4220f40ccf1bb65aa753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop heater no matter what PID output.  <a href="#a678aecfc1cef4220f40ccf1bb65aa753">More...</a><br/></td></tr>
 <tr class="separator:a678aecfc1cef4220f40ccf1bb65aa753"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +238,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Constructor. </p>
+<p>ISR for flow sensor. </p>
+<p>Constructor </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uiRims</td><td>: UIRims*. Pointer to <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library.">UIRims</a> instance </td></tr>
@@ -402,6 +410,34 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 
 <p>Start and run <a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino.">Rims</a> instance. </p>
 <p>Should be called in the loop() function of your sketchbook First time : <a class="el" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10" title="Initialize a Rims instance before starting temperature regulation.">_initialize()</a> is called Remaining time : <a class="el" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac" title="Main method called for temperature regulation at each iteration.">_iterate()</a> is called </p>
+
+</div>
+</div>
+<a class="anchor" id="a8653768bed0df24a0963cbec6aed09ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rims::setHeaterPowerDetect </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>pinHeaterVolt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set pin to detect if there is voltage applied on heater. </p>
+<p>If no voltage is detect on the heater, a speaker alarm is trigerred.</p>
+<dl class="section warning"><dt>Warning</dt><dd>DO NOT APPLY 120V OR 240V DIRECTLY ON ARDUINO PINS.</dd></dl>
+<p>It can be easily and cheaply made with a +5V DC power supply in parallel with the SSR and heater.</p>
+<p>I use it to detect if my breaker is trigerred or if I shut it off manually with an external switch. If the PID is informed that the heater is shut off, it will run smoother when the heater will be re-powered. This feature is really not mandatory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pinHeaterVolt</td><td>: byte. 5V power supply pin. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -683,7 +719,7 @@ Integration clamping diagram</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 4 2013 13:54:00 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2014 01:24:54 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

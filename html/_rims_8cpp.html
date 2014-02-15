@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +89,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">/home/francis/Dropbox/Arduino/libraries/rims/Rims.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -100,12 +103,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;math.h&quot;</code><br/>
 <code>#include &quot;utility/PID_v1mod.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_rims_8h_source.html">Rims.h</a>&quot;</code><br/>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:add4b5122d752f218b05d64d4ef2f7c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8cpp.html#add4b5122d752f218b05d64d4ef2f7c41">isrFlow</a> ()</td></tr>
+<tr class="memdesc:add4b5122d752f218b05d64d4ef2f7c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR for flow sensor.  <a href="#add4b5122d752f218b05d64d4ef2f7c41">More...</a><br/></td></tr>
+<tr class="separator:add4b5122d752f218b05d64d4ef2f7c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a74c6f471c6b69df7e86326a3ee815d38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74c6f471c6b69df7e86326a3ee815d38"></a>
+volatile unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8cpp.html#a74c6f471c6b69df7e86326a3ee815d38">g_flowLastTime</a> = 0</td></tr>
+<tr class="memdesc:a74c6f471c6b69df7e86326a3ee815d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last time interrupt was called [µSec]. <br/></td></tr>
+<tr class="separator:a74c6f471c6b69df7e86326a3ee815d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597cc8c30119837ef92670a53f0f1823"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a597cc8c30119837ef92670a53f0f1823"></a>
+volatile unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8cpp.html#a597cc8c30119837ef92670a53f0f1823">g_flowCurTime</a> = 0</td></tr>
+<tr class="memdesc:a597cc8c30119837ef92670a53f0f1823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current time interrupt is called [µSec]. <br/></td></tr>
+<tr class="separator:a597cc8c30119837ef92670a53f0f1823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino.">Rims</a> class definition. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="add4b5122d752f218b05d64d4ef2f7c41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void isrFlow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISR for flow sensor. </p>
+<p>ISR is used as a software capture mode. Time values are store in g_flowLastTime and g_flowCurTime. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 4 2013 13:54:00 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2014 01:24:54 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

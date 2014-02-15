@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -133,17 +133,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ad254d5d17f5a216d81c8756667e857cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new remaining time.  <a href="#ad254d5d17f5a216d81c8756667e857cf">More...</a><br/></td></tr>
 <tr class="separator:ad254d5d17f5a216d81c8756667e857cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_u_i_rims"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_u_i_rims')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_u_i_rims.html">UIRims</a></td></tr>
-<tr class="memitem:afff007822ab95e825377e88f4103ed6e inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#afff007822ab95e825377e88f4103ed6e">UIRims</a> (LiquidCrystal *lcd, byte pinKeysAnalog, byte pinLight=13, int pinSpeaker=-1)</td></tr>
-<tr class="memdesc:afff007822ab95e825377e88f4103ed6e inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#afff007822ab95e825377e88f4103ed6e">More...</a><br/></td></tr>
-<tr class="separator:afff007822ab95e825377e88f4103ed6e inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70193364ce0f1aaf8cfee272c530ca0 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa70193364ce0f1aaf8cfee272c530ca0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aa70193364ce0f1aaf8cfee272c530ca0">showPumpWarning</a> ()</td></tr>
-<tr class="memdesc:aa70193364ce0f1aaf8cfee272c530ca0 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the pump switching warning. <br/></td></tr>
-<tr class="separator:aa70193364ce0f1aaf8cfee272c530ca0 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaeaed8aef1ab96fd3e5b74ac115b92e inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaeaed8aef1ab96fd3e5b74ac115b92e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#adaeaed8aef1ab96fd3e5b74ac115b92e">showHeaterWarning</a> ()</td></tr>
-<tr class="memdesc:adaeaed8aef1ab96fd3e5b74ac115b92e inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the heater switching warning. <br/></td></tr>
-<tr class="separator:adaeaed8aef1ab96fd3e5b74ac115b92e inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a02acb22cd57771fe4626e76b7380a inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#ae4a02acb22cd57771fe4626e76b7380a">UIRims</a> (LiquidCrystal *lcd, byte pinKeysAnalog, byte pinLight=13, char pinSpeaker=-1)</td></tr>
+<tr class="memdesc:ae4a02acb22cd57771fe4626e76b7380a inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae4a02acb22cd57771fe4626e76b7380a">More...</a><br/></td></tr>
+<tr class="separator:ae4a02acb22cd57771fe4626e76b7380a inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59db7f3e0f03d9e0bd26e7d66bde1023 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59db7f3e0f03d9e0bd26e7d66bde1023"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a59db7f3e0f03d9e0bd26e7d66bde1023">showPumpWarning</a> (float flow=0.0)</td></tr>
+<tr class="memdesc:a59db7f3e0f03d9e0bd26e7d66bde1023 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the pump switching warning. <br/></td></tr>
+<tr class="separator:a59db7f3e0f03d9e0bd26e7d66bde1023 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad256a9a67e556f8b7457b79b5315484 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad256a9a67e556f8b7457b79b5315484"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aad256a9a67e556f8b7457b79b5315484">showHeaterWarning</a> (float state=false)</td></tr>
+<tr class="memdesc:aad256a9a67e556f8b7457b79b5315484 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the heater switching warning. <br/></td></tr>
+<tr class="separator:aad256a9a67e556f8b7457b79b5315484 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97c37c1a5982ce98566e6032da28cf9 inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aa97c37c1a5982ce98566e6032da28cf9">setHeaterVoltState</a> (boolean state)</td></tr>
+<tr class="memdesc:aa97c37c1a5982ce98566e6032da28cf9 inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set voltage detection on heater under the heater warning.  <a href="#aa97c37c1a5982ce98566e6032da28cf9">More...</a><br/></td></tr>
+<tr class="separator:aa97c37c1a5982ce98566e6032da28cf9 inherit pub_methods_class_u_i_rims"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec36d9dd1b50e70a8a9ae2e3f711ec9e inherit pub_methods_class_u_i_rims"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec36d9dd1b50e70a8a9ae2e3f711ec9e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aec36d9dd1b50e70a8a9ae2e3f711ec9e">showTempScreen</a> ()</td></tr>
 <tr class="memdesc:aec36d9dd1b50e70a8a9ae2e3f711ec9e inherit pub_methods_class_u_i_rims"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show temperature (set point and process value) screen on _lcd. <br/></td></tr>
@@ -352,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 4 2013 13:54:00 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 15 2014 01:24:55 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
