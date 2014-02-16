@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pidsampletime',['PIDSAMPLETIME',['../_rims_8h.html#a3932330618109035126fbe18b4f3a338',1,'Rims.h']]]
+  ['powerfreq',['POWERFREQ',['../_u_i_rims_8h.html#a76682ae7b9d473d7e027afe1d283b22b',1,'UIRims.h']]]
 ];

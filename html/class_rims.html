@@ -129,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#adbae0aed5b4a4a1f65d0acdb25f2f3cd">setInterruptFlow</a> (byte interruptFlow, float flowFactor, float lowBound=<a class="el" href="_rims_8h.html#ad7811141682133b63e27fa4b248cc8c1">DEFAULTFLOWLOWBOUND</a>, float upBound=<a class="el" href="_rims_8h.html#a0a84a750b7716d5d19303e7256dd2556">DEFAULTFLOWUPBOUND</a>, boolean stopOnCriticalFlow=true)</td></tr>
 <tr class="memdesc:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt function for flow sensor.  <a href="#adbae0aed5b4a4a1f65d0acdb25f2f3cd">More...</a><br/></td></tr>
 <tr class="separator:adbae0aed5b4a4a1f65d0acdb25f2f3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8653768bed0df24a0963cbec6aed09ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a8653768bed0df24a0963cbec6aed09ce">setHeaterPowerDetect</a> (byte pinHeaterVolt)</td></tr>
-<tr class="memdesc:a8653768bed0df24a0963cbec6aed09ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pin to detect if there is voltage applied on heater.  <a href="#a8653768bed0df24a0963cbec6aed09ce">More...</a><br/></td></tr>
-<tr class="separator:a8653768bed0df24a0963cbec6aed09ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b4eec1e578f4cf6e3cf1cf9aab4d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a55b4eec1e578f4cf6e3cf1cf9aab4d92">setHeaterPowerDetect</a> (char pinHeaterVolt)</td></tr>
+<tr class="memdesc:a55b4eec1e578f4cf6e3cf1cf9aab4d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pin to detect if there is voltage applied on heater.  <a href="#a55b4eec1e578f4cf6e3cf1cf9aab4d92">More...</a><br/></td></tr>
+<tr class="separator:a55b4eec1e578f4cf6e3cf1cf9aab4d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca8887b7291dc0e013042e0c17fef31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31">setTuningPID</a> (double Kp, double Ki, double Kd, double tauFilter, int mashWaterQty=-1)</td></tr>
 <tr class="memdesc:a6ca8887b7291dc0e013042e0c17fef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tuning for PID object.  <a href="#a6ca8887b7291dc0e013042e0c17fef31">More...</a><br/></td></tr>
 <tr class="separator:a6ca8887b7291dc0e013042e0c17fef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,14 +413,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 
 </div>
 </div>
-<a class="anchor" id="a8653768bed0df24a0963cbec6aed09ce"></a>
+<a class="anchor" id="a55b4eec1e578f4cf6e3cf1cf9aab4d92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Rims::setHeaterPowerDetect </td>
           <td>(</td>
-          <td class="paramtype">byte&#160;</td>
+          <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>pinHeaterVolt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -430,7 +430,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 <p>Set pin to detect if there is voltage applied on heater. </p>
 <p>If no voltage is detect on the heater, a speaker alarm is trigerred.</p>
 <dl class="section warning"><dt>Warning</dt><dd>DO NOT APPLY 120V OR 240V DIRECTLY ON ARDUINO PINS.</dd></dl>
-<p>It can be easily and cheaply made with a +5V DC power supply in parallel with the SSR and heater.</p>
+<p>It can be easily and cheaply made with a +5V DC power supply in parallel with the SSR and heater. It is recommended to add a 10Kohm or so resistor in series with the power supply.</p>
+<div class="image">
+<img src="power_circuit.png" alt="power_circuit.png"/>
+<div class="caption">
+Voltage detection circuit</div></div>
 <p>I use it to detect if my breaker is trigerred or if I shut it off manually with an external switch. If the PID is informed that the heater is shut off, it will run smoother when the heater will be re-powered. This feature is really not mandatory.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -719,7 +723,7 @@ Integration clamping diagram</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2014 01:24:54 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 16 2014 00:40:54 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

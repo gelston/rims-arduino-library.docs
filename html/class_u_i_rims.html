@@ -128,9 +128,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aad256a9a67e556f8b7457b79b5315484">showHeaterWarning</a> (float state=false)</td></tr>
 <tr class="memdesc:aad256a9a67e556f8b7457b79b5315484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the heater switching warning. <br/></td></tr>
 <tr class="separator:aad256a9a67e556f8b7457b79b5315484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa97c37c1a5982ce98566e6032da28cf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aa97c37c1a5982ce98566e6032da28cf9">setHeaterVoltState</a> (boolean state)</td></tr>
-<tr class="memdesc:aa97c37c1a5982ce98566e6032da28cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set voltage detection on heater under the heater warning.  <a href="#aa97c37c1a5982ce98566e6032da28cf9">More...</a><br/></td></tr>
-<tr class="separator:aa97c37c1a5982ce98566e6032da28cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec36d9dd1b50e70a8a9ae2e3f711ec9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec36d9dd1b50e70a8a9ae2e3f711ec9e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aec36d9dd1b50e70a8a9ae2e3f711ec9e">showTempScreen</a> ()</td></tr>
 <tr class="memdesc:aec36d9dd1b50e70a8a9ae2e3f711ec9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show temperature (set point and process value) screen on _lcd. <br/></td></tr>
@@ -158,6 +155,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a11f38507717e82dccdce045628b8b91d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a11f38507717e82dccdce045628b8b91d">setFlowBounds</a> (float lowBound, float upBound)</td></tr>
 <tr class="memdesc:a11f38507717e82dccdce045628b8b91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bounds for accepted flow rate.  <a href="#a11f38507717e82dccdce045628b8b91d">More...</a><br/></td></tr>
 <tr class="separator:a11f38507717e82dccdce045628b8b91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa525e73f5ed579724a8e60e2524f6057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#aa525e73f5ed579724a8e60e2524f6057">setHeaterVoltState</a> (boolean state, boolean buzz=true)</td></tr>
+<tr class="memdesc:aa525e73f5ed579724a8e60e2524f6057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set voltage detection on heater under the heater warning.  <a href="#aa525e73f5ed579724a8e60e2524f6057">More...</a><br/></td></tr>
+<tr class="separator:aa525e73f5ed579724a8e60e2524f6057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3674e586ac9fdeaba02f5905b48994"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_i_rims.html#a9e3674e586ac9fdeaba02f5905b48994">readKeysADC</a> (boolean waitNone=true)</td></tr>
 <tr class="memdesc:a9e3674e586ac9fdeaba02f5905b48994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read keys without software debouce.  <a href="#a9e3674e586ac9fdeaba02f5905b48994">More...</a><br/></td></tr>
 <tr class="separator:a9e3674e586ac9fdeaba02f5905b48994"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -973,7 +973,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 
 </div>
 </div>
-<a class="anchor" id="aa97c37c1a5982ce98566e6032da28cf9"></a>
+<a class="anchor" id="aa525e73f5ed579724a8e60e2524f6057"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -981,8 +981,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
           <td class="memname">void UIRims::setHeaterVoltState </td>
           <td>(</td>
           <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>buzz</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -991,6 +1001,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>: boolean. If true, show on, else, off. </td></tr>
+    <tr><td class="paramname">buzz</td><td>: boolean. If true, speaker alarm is trigerred if no voltage. If false, state is shown on LCD. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1124,7 +1135,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UIRimsIdent</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2014 01:24:55 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 16 2014 00:40:54 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

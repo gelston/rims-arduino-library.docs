@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="_rims_8h.html#a0a84a750b7716d5d19303e7256dd2556">   54</a></span>&#160;<span class="preprocessor">#define DEFAULTFLOWUPBOUND 5.0</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="_rims_8h.html#a3e4da66d776edb92ea6ebc0128749dc2">   57</a></span>&#160;<span class="preprocessor">#define CRITICALFLOW 5.0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="_rims_8h.html#a3e4da66d776edb92ea6ebc0128749dc2">   57</a></span>&#160;<span class="preprocessor">#define CRITICALFLOW 1.0</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_u_i_rims_8h.html" title="UIRims class declaration.">utility/UIRims.h</a>&quot;</span></div>
@@ -147,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                          <span class="keywordtype">float</span> lowBound = <a class="code" href="_rims_8h.html#ad7811141682133b63e27fa4b248cc8c1" title="Default lower bound for accepted flow rate [L/min].">DEFAULTFLOWLOWBOUND</a>, </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                          <span class="keywordtype">float</span> upBound = <a class="code" href="_rims_8h.html#a0a84a750b7716d5d19303e7256dd2556" title="Default Upper bound for accepted flow rate [L/min].">DEFAULTFLOWUPBOUND</a>,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                          <span class="keywordtype">boolean</span> stopOnCriticalFlow = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a8653768bed0df24a0963cbec6aed09ce" title="Set pin to detect if there is voltage applied on heater.">setHeaterPowerDetect</a>(byte pinHeaterVolt);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a55b4eec1e578f4cf6e3cf1cf9aab4d92" title="Set pin to detect if there is voltage applied on heater.">setHeaterPowerDetect</a>(<span class="keywordtype">char</span> pinHeaterVolt);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31" title="Set tuning for PID object.">setTuningPID</a>(<span class="keywordtype">double</span> Kp, <span class="keywordtype">double</span> Ki, <span class="keywordtype">double</span> Kd, <span class="keywordtype">double</span> tauFilter,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                      <span class="keywordtype">int</span> mashWaterQty = -1);</div>
@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    byte _analogPinPV;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    byte _pinCV;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    byte _pinLED;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    byte _pinHeaterVolt;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">char</span> _pinHeaterVolt;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// ===STATE DATAS===</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">boolean</span> _rimsInitialized;</div>
@@ -240,7 +240,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2014 01:24:54 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 16 2014 00:40:53 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
