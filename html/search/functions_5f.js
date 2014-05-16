@@ -9,7 +9,6 @@ var searchData=
   ['_5fprintfloatlcd',['_printFloatLCD',['../class_u_i_rims.html#a4de73697ed6add09a638c9793d7953bf',1,'UIRims']]],
   ['_5fprintstrlcd',['_printStrLCD',['../class_u_i_rims.html#ad1fe3126bcda1c4238238863ddfee750',1,'UIRims']]],
   ['_5frefreshdisplay',['_refreshDisplay',['../class_rims.html#a7d905079d252ad4f71b3dae4b481cdc5',1,'Rims']]],
-  ['_5frefreshpid',['_refreshPID',['../class_rims.html#aa509932175d1b91d5c01052d82658f69',1,'Rims']]],
   ['_5frefreshssr',['_refreshSSR',['../class_rims.html#adfb4f9b99ab42488024b61e5e73c9cb3',1,'Rims']]],
   ['_5frefreshtimer',['_refreshTimer',['../class_rims.html#a5cd9784f8564d28f177ddfede8edf6af',1,'Rims']]],
   ['_5fsetcursorposition',['_setCursorPosition',['../class_u_i_rims.html#a73fab15d56102dab783226f886b79639',1,'UIRims']]],

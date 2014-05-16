@@ -7,7 +7,6 @@ var searchData=
   ['setidentcv',['setIdentCV',['../class_u_i_rims_ident.html#a10a647ed731ccb1b1cb28a37319b003e',1,'UIRimsIdent']]],
   ['setinterruptflow',['setInterruptFlow',['../class_rims.html#adbae0aed5b4a4a1f65d0acdb25f2f3cd',1,'Rims::setInterruptFlow()'],['../class_rims_ident.html#a30740442b1396b5e65fbefd47ef73aa1',1,'RimsIdent::setInterruptFlow()']]],
   ['setpinled',['setPinLED',['../class_rims.html#a5756a8bf5ab82ad100038f62a0c38101',1,'Rims']]],
-  ['setsetpointfilter',['setSetPointFilter',['../class_rims.html#a26ebaf110340d939d1e5bccdb1fd5fcc',1,'Rims']]],
   ['settemppv',['setTempPV',['../class_u_i_rims.html#a3a6740dad3759f101258b7179bcbddc4',1,'UIRims']]],
   ['settempsp',['setTempSP',['../class_u_i_rims.html#a3978afb8709c52616520cf1a5fe604b7',1,'UIRims']]],
   ['setthermistor',['setThermistor',['../class_rims.html#a972b17ec148f68ac816ad8a4a29a802d',1,'Rims']]],
