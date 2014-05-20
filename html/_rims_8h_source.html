@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>rims-arduino-library: C:/Users/Francis/Dropbox/Arduino/libraries/rims/Rims.h Source File</title>
+<title>rims-arduino-library: /home/francis/Dropbox/Arduino/libraries/rims/Rims.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,6 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
    &#160;<span id="projectnumber">v1.6.1</span>
@@ -89,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">C:/Users/Francis/Dropbox/Arduino/libraries/rims/Rims.h</div>  </div>
+<div class="title">/home/francis/Dropbox/Arduino/libraries/rims/Rims.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="_rims_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//=====================================================</span></div>
@@ -99,141 +100,164 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define Rims_h</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// !!! COMMENT/UNCOMMENT TO INCLUDE/EXCLUDE THOSE FEATURES !!!!!!!!!!!!!!!!!!!!</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="_rims_8h.html#aa5287895c5aff91b5b3579835160cb06">   31</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define WITH_W25QFLASH</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="_rims_8h.html#a755b9528bf80376f0476829e8078a0da">   38</a></span>&#160;<span class="preprocessor">#define SAMPLETIME 1000</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SSRWINDOWSIZE 5000</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="_rims_8h.html#ae9c41ce8eb83b29271bfe9fa42d8f476">   43</a></span>&#160;<span class="preprocessor">#define DEFAULTSP 68</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTTIME 5400</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define DEFAULTSTEINHART0 0.001</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTSTEINHART1 0.0002</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTSTEINHART2 -4e-7</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTSTEINHART3 1e-7</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTRES1 10000</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="_rims_8h.html#a1051998dda228c8bfd0d9f08e2bb960a">   56</a></span>&#160;<span class="preprocessor">#define MAXTEMPVAR 1.0 </span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define SCREENSWITCHTIME 10000 </span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTFLOWLOWBOUND 3.0</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTFLOWUPBOUND 5.0</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CRITICALFLOW 5.0</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_u_i_rims_8h.html" title="UIRims class declaration. ">utility/UIRims.h</a>&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#include &quot;utility/PID_v1mod.h&quot;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef WITH_W25QFLASH</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &quot;utility/w25qflash.h&quot;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="_rims_8h.html#aa5287895c5aff91b5b3579835160cb06">   29</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define WITH_W25QFLASH                                          </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="_rims_8h.html#a755b9528bf80376f0476829e8078a0da">   34</a></span>&#160;<span class="preprocessor">#define SAMPLETIME 1000</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SSRWINDOWSIZE 5000</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="_rims_8h.html#ae9c41ce8eb83b29271bfe9fa42d8f476">   39</a></span>&#160;<span class="preprocessor">#define DEFAULTSP 68</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTTIME 5400</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define DEFAULTSTEINHART0 0.001</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTSTEINHART1 0.0002</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTSTEINHART2 -4e-7</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTSTEINHART3 1e-7</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTRES1 10000</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="_rims_8h.html#a1051998dda228c8bfd0d9f08e2bb960a">   52</a></span>&#160;<span class="preprocessor">#define MAXTEMPVAR 1.0 </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define SCREENSWITCHTIME 10000 </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTFLOWLOWBOUND 3.0</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULTFLOWUPBOUND 5.0</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CRITICALFLOW 5.0</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="_rims_8h.html#ae4c344fa0576528407092be950b104b0">   66</a></span>&#160;<span class="preprocessor">#define ADDRDATACOUNT       0x000000 // 1st sector</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ADDRSESSIONTABLE    0x001000 // 2nd sector</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ADDRBREWDATA        0x001100 // 2nd sector, 2nd page</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BYTESPERDATA        18</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_u_i_rims_8h.html" title="UIRims class declaration. ">utility/UIRims.h</a>&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#include &quot;utility/PID_v1mod.h&quot;</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_rims.html">   86</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_rims_ident.html" title="Toolkits for process identification to facilitate PID tunning. ">RimsIdent</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_rims.html#ac370295657d50fed766ccded3e7da76c" title="ISR for flow sensor. ">Rims</a>(<a class="code" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a>* uiRims, byte analogPinTherm, byte ssrPin, </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;         <span class="keywordtype">double</span>* currentTemp, <span class="keywordtype">double</span>* ssrControl, <span class="keywordtype">double</span>* settedTemp);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a972b17ec148f68ac816ad8a4a29a802d" title="Set thermistor parameters. ">setThermistor</a>(<span class="keywordtype">float</span> steinhartCoefs[],<span class="keywordtype">float</span> res1, <span class="keywordtype">float</span> fineTune = 0);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a5756a8bf5ab82ad100038f62a0c38101" title="Set pin for heater LED indicator. ">setPinLED</a>(byte pinLED);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#adbae0aed5b4a4a1f65d0acdb25f2f3cd" title="Set interrupt function for flow sensor. ">setInterruptFlow</a>(byte interruptFlow, <span class="keywordtype">float</span> flowFactor, </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                          <span class="keywordtype">float</span> lowBound = <a class="code" href="_rims_8h.html#ad7811141682133b63e27fa4b248cc8c1" title="Default lower bound for accepted flow rate [L/min]. ">DEFAULTFLOWLOWBOUND</a>, </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                          <span class="keywordtype">float</span> upBound = <a class="code" href="_rims_8h.html#a0a84a750b7716d5d19303e7256dd2556" title="Default Upper bound for accepted flow rate [L/min]. ">DEFAULTFLOWUPBOUND</a>,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                          <span class="keywordtype">boolean</span> stopOnCriticalFlow = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a55b4eec1e578f4cf6e3cf1cf9aab4d92" title="Set pin to detect if there is voltage applied on heater. ">setHeaterPowerDetect</a>(<span class="keywordtype">char</span> pinHeaterVolt);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31" title="Set tuning for PID object. ">setTuningPID</a>(<span class="keywordtype">double</span> Kp, <span class="keywordtype">double</span> Ki, <span class="keywordtype">double</span> Kd, <span class="keywordtype">double</span> tauFilter,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                      <span class="keywordtype">int</span> mashWaterQty = -1);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a60650cdc19193c465d47b1f3ad72502f" title="Start and run Rims instance. ">run</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_rims.html#a595c06b4c99ef5c379191a4bffbb1867" title="Get temperature from thermistor. ">getTempPV</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_rims.html#a25026943eb8ac76bfedab303008389e0" title="Get flow from hall-effect flow sensor. ">getFlow</a>();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="class_rims.html#af69c666509eb1fc0a22cbed6a20f640b" title="Check if heater is powered or not. ">getHeaterVoltage</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753" title="Stop heater no matter what PID output. ">stopHeating</a>(<span class="keywordtype">boolean</span> state);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10" title="Initialize a Rims instance before starting temperature regulation. ">_initialize</a>();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac" title="Main method called for temperature regulation at each iteration. ">_iterate</a>();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a5cd9784f8564d28f177ddfede8edf6af" title="Refresh timer value. ">_refreshTimer</a>(<span class="keywordtype">boolean</span> verifyTemp = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a7d905079d252ad4f71b3dae4b481cdc5" title="Refresh display used by UIRims instance. ">_refreshDisplay</a>();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#adfb4f9b99ab42488024b61e5e73c9cb3" title="Refresh solid state relay SSR will be refreshed in function of _controlValPtr value. ">_refreshSSR</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef WITH_W25QFLASH</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &quot;utility/w25qflash.h&quot;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="class_rims.html">   92</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_rims_ident.html" title="Toolkits for process identification to facilitate PID tunning. ">RimsIdent</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_rims.html#ac370295657d50fed766ccded3e7da76c" title="ISR for flow sensor. ">Rims</a>(<a class="code" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a>* uiRims, byte analogPinTherm, byte ssrPin, </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;         <span class="keywordtype">double</span>* currentTemp, <span class="keywordtype">double</span>* ssrControl, <span class="keywordtype">double</span>* settedTemp);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a972b17ec148f68ac816ad8a4a29a802d" title="Set thermistor parameters. ">setThermistor</a>(<span class="keywordtype">float</span> steinhartCoefs[],<span class="keywordtype">float</span> res1, <span class="keywordtype">float</span> fineTune = 0);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a5756a8bf5ab82ad100038f62a0c38101" title="Set pin for heater LED indicator. ">setPinLED</a>(byte pinLED);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#adbae0aed5b4a4a1f65d0acdb25f2f3cd" title="Set interrupt function for flow sensor. ">setInterruptFlow</a>(byte interruptFlow, <span class="keywordtype">float</span> flowFactor, </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                          <span class="keywordtype">float</span> lowBound = <a class="code" href="_rims_8h.html#ad7811141682133b63e27fa4b248cc8c1" title="Default lower bound for accepted flow rate [L/min]. ">DEFAULTFLOWLOWBOUND</a>, </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                          <span class="keywordtype">float</span> upBound = <a class="code" href="_rims_8h.html#a0a84a750b7716d5d19303e7256dd2556" title="Default Upper bound for accepted flow rate [L/min]. ">DEFAULTFLOWUPBOUND</a>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                          <span class="keywordtype">boolean</span> stopOnCriticalFlow = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a55b4eec1e578f4cf6e3cf1cf9aab4d92" title="Set pin to detect if there is voltage applied on heater. ">setHeaterPowerDetect</a>(<span class="keywordtype">char</span> pinHeaterVolt);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31" title="Set tuning for PID object. ">setTuningPID</a>(<span class="keywordtype">double</span> Kp, <span class="keywordtype">double</span> Ki, <span class="keywordtype">double</span> Kd, <span class="keywordtype">double</span> tauFilter,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                      <span class="keywordtype">int</span> mashWaterQty = -1);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#ifdef WITH_W25QFLASH</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#aaa8c4f9aabf37a6ed9d74083288a3dd2" title="Set pin for flash memory chip select. ">setMemCSPin</a>(byte csPin);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a60650cdc19193c465d47b1f3ad72502f" title="Start and run Rims instance. ">run</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_rims.html#a595c06b4c99ef5c379191a4bffbb1867" title="Get temperature from thermistor. ">getTempPV</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_rims.html#a25026943eb8ac76bfedab303008389e0" title="Get flow from hall-effect flow sensor. ">getFlow</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="class_rims.html#af69c666509eb1fc0a22cbed6a20f640b" title="Check if heater is powered or not. ">getHeaterVoltage</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753" title="Stop heater no matter what PID output. ">stopHeating</a>(<span class="keywordtype">boolean</span> state);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// ===GENERAL===</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a>* _ui;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    PIDmod _myPID;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    byte _analogPinPV;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    byte _pinCV;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    byte _pinLED;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">char</span> _pinHeaterVolt;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// ===STATE DATAS===</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">boolean</span> _rimsInitialized;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">boolean</span> _stopOnCriticalFlow;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">boolean</span> _criticalFlow;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">boolean</span> _ncTherm;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">boolean</span> _noPower;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">boolean</span> _buzzerState;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// ===MULTIPLE PIDs===</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    byte _pidQty;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    byte _currentPID;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">int</span> _mashWaterValues[4];</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// ===THERMISTOR===</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">float</span> _steinhartCoefs[4];</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">float</span> _res1;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">float</span> _fineTuneTemp;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// ===PID I/O===</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">double</span>* _setPointPtr;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">double</span>* _processValPtr;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">double</span>* _controlValPtr; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// ===PID PARAMS===</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">double</span> _kps[4];</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">double</span> _kis[4];</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">double</span> _kds[4];</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">double</span> _tauFilter[4];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10" title="Initialize a Rims instance before starting temperature regulation. ">_initialize</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac" title="Main method called for temperature regulation at each iteration. ">_iterate</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a5cd9784f8564d28f177ddfede8edf6af" title="Refresh timer value. ">_refreshTimer</a>(<span class="keywordtype">boolean</span> verifyTemp = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#a7d905079d252ad4f71b3dae4b481cdc5" title="Refresh display used by UIRims instance. ">_refreshDisplay</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_rims.html#adfb4f9b99ab42488024b61e5e73c9cb3" title="Refresh solid state relay SSR will be refreshed in function of _controlValPtr value. ">_refreshSSR</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#ifdef WITH_W25QFLASH</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span>    byte          <a class="code" href="class_rims.html#aab442b1fdf7e9e3f89d99d62043fde87" title="Count how many brew sessions were saved in flash mem. ">_memCountSessions</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_rims.html#a507fdf3be8b399af61d28a8d42f2b56c" title="Count how many data point were taken. ">_memCountSessionData</a>();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span>          <a class="code" href="class_rims.html#a194e641304e729b513ff4bc4cd0e60a5" title="Initialize flash memory. ">_memInit</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span>          <a class="code" href="class_rims.html#afd8695e0bbb27228e92e7ab18e0f6051" title="Add data point to the flash memory. ">_memAddBrewData</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> time, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cv,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                 <span class="keywordtype">float</span> pv, <span class="keywordtype">float</span> flow,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> timerRemaining);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// ===GENERAL===</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a>* _ui;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    PIDmod _myPID;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    byte _analogPinPV;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    byte _pinCV;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    byte _pinLED;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">char</span> _pinHeaterVolt;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#ifdef WITH_W25QFLASH</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span>    <a class="code" href="class_w25_q_flash.html">W25QFlash</a> _myMem;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// ===STATE DATAS===</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">boolean</span> _rimsInitialized;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">boolean</span> _stopOnCriticalFlow;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">boolean</span> _criticalFlow;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">boolean</span> _ncTherm;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">boolean</span> _noPower;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">boolean</span> _buzzerState;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">boolean</span> _memInitialized;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// ===TIMER===</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _currentTime;             </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _settedTime;              </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _rimsStartTime;           </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _windowStartTime;         </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _runningTime;             </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _totalStoppedTime;        </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _timerStopTime;           </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _timerStartTime;          </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _lastScreenSwitchTime;    </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _lastTimePID;             </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">boolean</span> _sumStoppedTime;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">boolean</span> _timerElapsed;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// ===FLOW SENSOR===</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">float</span> _flowFactor; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">float</span> _flow;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;};</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// ===MULTIPLE PIDs===</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    byte _pidQty;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    byte _currentPID;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">int</span> _mashWaterValues[4];</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// ===THERMISTOR===</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">float</span> _steinhartCoefs[4];</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">float</span> _res1;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">float</span> _fineTuneTemp;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// ===PID I/O===</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">double</span>* _setPointPtr;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">double</span>* _processValPtr;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">double</span>* _controlValPtr; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// ===PID PARAMS===</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">double</span> _kps[4];</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">double</span> _kis[4];</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">double</span> _kds[4];</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">double</span> _tauFilter[4];</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// ===TIMER===</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _currentTime;             </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _settedTime;              </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _rimsStartTime;           </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _windowStartTime;         </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _runningTime;             </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _totalStoppedTime;        </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _timerStopTime;           </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _timerStartTime;          </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _lastScreenSwitchTime;    </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _lastTimePID;             </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">boolean</span> _sumStoppedTime;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">boolean</span> _timerElapsed;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// ===FLOW SENSOR===</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">float</span> _flowFactor; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">float</span> _flow;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#ifdef WITH_W25QFLASH</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span>    <span class="comment">// ===FLASH MEM===</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _memNextAddr;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _memDataQty;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 20:21:44 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 19 2014 21:55:35 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

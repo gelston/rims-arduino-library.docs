@@ -27,6 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
    &#160;<span id="projectnumber">v1.6.1</span>
@@ -99,6 +100,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_rims.html#ab5e0dff0c1a6895a261e3e036100ad10">_initialize</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_rims.html#a7997ca5ce25f9ccf8fff58074ffedeac">_iterate</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_rims.html#afd8695e0bbb27228e92e7ab18e0f6051">_memAddBrewData</a>(unsigned long time, unsigned int cv, float pv, float flow, unsigned long timerRemaining)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_rims.html#a507fdf3be8b399af61d28a8d42f2b56c">_memCountSessionData</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_rims.html#aab442b1fdf7e9e3f89d99d62043fde87">_memCountSessions</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_rims.html#a194e641304e729b513ff4bc4cd0e60a5">_memInit</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a7d905079d252ad4f71b3dae4b481cdc5">_refreshDisplay</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_rims.html#adfb4f9b99ab42488024b61e5e73c9cb3">_refreshSSR</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a5cd9784f8564d28f177ddfede8edf6af">_refreshTimer</a>(boolean verifyTemp=true)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -110,14 +115,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a60650cdc19193c465d47b1f3ad72502f">run</a>()</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_rims.html#a55b4eec1e578f4cf6e3cf1cf9aab4d92">setHeaterPowerDetect</a>(char pinHeaterVolt)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_rims.html#adbae0aed5b4a4a1f65d0acdb25f2f3cd">setInterruptFlow</a>(byte interruptFlow, float flowFactor, float lowBound=DEFAULTFLOWLOWBOUND, float upBound=DEFAULTFLOWUPBOUND, boolean stopOnCriticalFlow=true)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_rims.html#a5756a8bf5ab82ad100038f62a0c38101">setPinLED</a>(byte pinLED)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a972b17ec148f68ac816ad8a4a29a802d">setThermistor</a>(float steinhartCoefs[], float res1, float fineTune=0)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31">setTuningPID</a>(double Kp, double Ki, double Kd, double tauFilter, int mashWaterQty=-1)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753">stopHeating</a>(boolean state)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_rims.html#aaa8c4f9aabf37a6ed9d74083288a3dd2">setMemCSPin</a>(byte csPin)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a5756a8bf5ab82ad100038f62a0c38101">setPinLED</a>(byte pinLED)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_rims.html#a972b17ec148f68ac816ad8a4a29a802d">setThermistor</a>(float steinhartCoefs[], float res1, float fineTune=0)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31">setTuningPID</a>(double Kp, double Ki, double Kd, double tauFilter, int mashWaterQty=-1)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_rims.html#a678aecfc1cef4220f40ccf1bb65aa753">stopHeating</a>(boolean state)</td><td class="entry"><a class="el" href="class_rims.html">Rims</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 20:21:44 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 19 2014 21:55:35 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -27,6 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
    &#160;<span id="projectnumber">v1.6.1</span>
@@ -134,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ca8887b7291dc0e013042e0c17fef31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a6ca8887b7291dc0e013042e0c17fef31">setTuningPID</a> (double Kp, double Ki, double Kd, double tauFilter, int mashWaterQty=-1)</td></tr>
 <tr class="memdesc:a6ca8887b7291dc0e013042e0c17fef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tuning for PID object.  <a href="#a6ca8887b7291dc0e013042e0c17fef31">More...</a><br/></td></tr>
 <tr class="separator:a6ca8887b7291dc0e013042e0c17fef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8c4f9aabf37a6ed9d74083288a3dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#aaa8c4f9aabf37a6ed9d74083288a3dd2">setMemCSPin</a> (byte csPin)</td></tr>
+<tr class="memdesc:aaa8c4f9aabf37a6ed9d74083288a3dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pin for flash memory chip select.  <a href="#aaa8c4f9aabf37a6ed9d74083288a3dd2">More...</a><br/></td></tr>
+<tr class="separator:aaa8c4f9aabf37a6ed9d74083288a3dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60650cdc19193c465d47b1f3ad72502f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a60650cdc19193c465d47b1f3ad72502f">run</a> ()</td></tr>
 <tr class="memdesc:a60650cdc19193c465d47b1f3ad72502f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start and run <a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a> instance.  <a href="#a60650cdc19193c465d47b1f3ad72502f">More...</a><br/></td></tr>
 <tr class="separator:a60650cdc19193c465d47b1f3ad72502f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +175,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#adfb4f9b99ab42488024b61e5e73c9cb3">_refreshSSR</a> ()</td></tr>
 <tr class="memdesc:adfb4f9b99ab42488024b61e5e73c9cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh solid state relay SSR will be refreshed in function of _controlValPtr value. <br/></td></tr>
 <tr class="separator:adfb4f9b99ab42488024b61e5e73c9cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab442b1fdf7e9e3f89d99d62043fde87"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#aab442b1fdf7e9e3f89d99d62043fde87">_memCountSessions</a> ()</td></tr>
+<tr class="memdesc:aab442b1fdf7e9e3f89d99d62043fde87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many brew sessions were saved in flash mem.  <a href="#aab442b1fdf7e9e3f89d99d62043fde87">More...</a><br/></td></tr>
+<tr class="separator:aab442b1fdf7e9e3f89d99d62043fde87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507fdf3be8b399af61d28a8d42f2b56c"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a507fdf3be8b399af61d28a8d42f2b56c">_memCountSessionData</a> ()</td></tr>
+<tr class="memdesc:a507fdf3be8b399af61d28a8d42f2b56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many data point were taken.  <a href="#a507fdf3be8b399af61d28a8d42f2b56c">More...</a><br/></td></tr>
+<tr class="separator:a507fdf3be8b399af61d28a8d42f2b56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194e641304e729b513ff4bc4cd0e60a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a194e641304e729b513ff4bc4cd0e60a5">_memInit</a> ()</td></tr>
+<tr class="memdesc:a194e641304e729b513ff4bc4cd0e60a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize flash memory.  <a href="#a194e641304e729b513ff4bc4cd0e60a5">More...</a><br/></td></tr>
+<tr class="separator:a194e641304e729b513ff4bc4cd0e60a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8695e0bbb27228e92e7ab18e0f6051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#afd8695e0bbb27228e92e7ab18e0f6051">_memAddBrewData</a> (unsigned long time, unsigned int cv, float pv, float flow, unsigned long timerRemaining)</td></tr>
+<tr class="memdesc:afd8695e0bbb27228e92e7ab18e0f6051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add data point to the flash memory.  <a href="#afd8695e0bbb27228e92e7ab18e0f6051">More...</a><br/></td></tr>
+<tr class="separator:afd8695e0bbb27228e92e7ab18e0f6051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -308,6 +324,198 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 <p>At each PID calculation (at each SAMPLETIME sec), datas is sent over Serial communication for logging purpose. </p>
 
 <p>Reimplemented in <a class="el" href="class_rims_ident.html#ac70202c7c0012653bfb81cdc19520a63">RimsIdent</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd8695e0bbb27228e92e7ab18e0f6051"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rims::_memAddBrewData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>cv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>flow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>timerRemaining</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add data point to the flash memory. </p>
+<p>Five values is added at _memNextAddr, 18 bytes in total. Temperature setpoint (float : 4 bytes) is saved only once, at the beginning of the brew sessions in <a class="el" href="class_rims.html#a194e641304e729b513ff4bc4cd0e60a5" title="Initialize flash memory. ">_memInit()</a>. For exemple, for the first data (starting at ADDRBREWDATA or 0x001100) of the first brew session, the memory map would be :</p>
+<table class="doxtable">
+<tr>
+<th>Address </th><th>Data </th><th>Size  </th></tr>
+<tr>
+<td>0x001100 </td><td>sp </td><td>4 bytes </td></tr>
+<tr>
+<td>0x001104 </td><td>time </td><td>4 bytes </td></tr>
+<tr>
+<td>0x091108 </td><td>cv </td><td>2 bytes </td></tr>
+<tr>
+<td>0x09110A </td><td>pv </td><td>4 bytes </td></tr>
+<tr>
+<td>0x09110E </td><td>flow </td><td>4 bytes </td></tr>
+<tr>
+<td>0x091102 </td><td>timerRemaining </td><td>4 bytes </td></tr>
+</table>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>: unsigned long. time in sec of data point </td></tr>
+    <tr><td class="paramname">cv</td><td>: unsigned int. SSR control value </td></tr>
+    <tr><td class="paramname">pv</td><td>: float. temperature in deg Celcius </td></tr>
+    <tr><td class="paramname">flow</td><td>: float. flow in L/min </td></tr>
+    <tr><td class="paramname">timerRemaining</td><td>: unsigned long. remaining time on timer in seconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a507fdf3be8b399af61d28a8d42f2b56c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Rims::_memCountSessionData </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Count how many data point were taken. </p>
+<p>When brew data is added in the memory, a sector is filled with "0" to remember how many data were taken. This sector is the first, at the beginning of the memory (ADDRDATACOUNT or 0x000000). If 12 brew data were taken since de beginning (or 12 seconds were ellapsed), the memory map would be like this :</p>
+<table class="doxtable">
+<tr>
+<th>Address </th><th>Data  </th></tr>
+<tr>
+<td>0x000000 </td><td>b00000000 </td></tr>
+<tr>
+<td>0x000001 </td><td>b11110000 </td></tr>
+<tr>
+<td>0x000002 </td><td>b11111111 </td></tr>
+<tr>
+<td>0x000003 </td><td>b11111111 </td></tr>
+<tr>
+<td>... </td><td>... </td></tr>
+<tr>
+<td>0x000FFF </td><td>b11111111 </td></tr>
+</table>
+<p>I used this method because of a limitation of the flash memory. I could not use normal counting because freshly erased bits can be cleared (set to "0") but cannot be set to "1" without full sector erase. </p>
+
+</div>
+</div>
+<a class="anchor" id="aab442b1fdf7e9e3f89d99d62043fde87"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Rims::_memCountSessions </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Count how many brew sessions were saved in flash mem. </p>
+<p>Max is 64 brew sessions, rollback if more. When new brew session is started, the starting address of the datablock is saved in the brew sessions table, starting at ADDRSESSIONTABLE or 0x001000. For exemple, if 2 brew session were done of 2 seconds each (so 4+18+18=40 bytes each), the memory map of the brew sessions table would be :</p>
+<table class="doxtable">
+<tr>
+<th>Address </th><th>Data </th><th>Size  </th></tr>
+<tr>
+<td>0x001000 </td><td>0x00001100 </td><td>4 bytes </td></tr>
+<tr>
+<td>0x001004 </td><td>0x00001128 </td><td>4 bytes </td></tr>
+<tr>
+<td>0x001008 </td><td>0xFFFFFFFF </td><td>4 bytes </td></tr>
+<tr>
+<td>0x000003 </td><td>0xFFFFFFFF </td><td>4 bytes </td></tr>
+<tr>
+<td>... </td><td>... </td><td>... </td></tr>
+<tr>
+<td>0x0010FB </td><td>0xFFFFFFFF </td><td>4 bytes </td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a194e641304e729b513ff4bc4cd0e60a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rims::_memInit </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize flash memory. </p>
+<p>Verify where to store the new datas and saved temperature setpoint at the beginning of the datablock. </p>
 
 </div>
 </div>
@@ -465,6 +673,37 @@ Voltage detection circuit</div></div>
     <tr><td class="paramname">lowBound</td><td>: float. Lower bound used for accepted flow rate. </td></tr>
     <tr><td class="paramname">upBound</td><td>: float. Upper bound used for accepted flow rate </td></tr>
     <tr><td class="paramname">stopOnCriticalFlow</td><td>: boolean (default=true). If true and flow is &lt;= CRITICALFLOW on <a class="el" href="class_rims.html#a25026943eb8ac76bfedab303008389e0" title="Get flow from hall-effect flow sensor. ">getFlow()</a> call, heater is turn off. Else flow mesurment doesn't influence heater action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa8c4f9aabf37a6ed9d74083288a3dd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rims::setMemCSPin </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>csPin</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set pin for flash memory chip select. </p>
+<p>Code was built on Windbond W25Q80BV SPI flash memory. MOSI, MISO and CLK are fixed pins on all Arduino. For ex, it's 11, 12, 13 for MOSI, MISO and CLK respectivly on Arduino UNO. For more information : <a href="http://arduino.cc/en/Reference/SPI">http://arduino.cc/en/Reference/SPI</a>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>WINBOND W25Q80BV WORKS IN 3.3V AND MOST ARDUINO WORKS IN 5V. IF IT'S YOUR CASE, DO NOT DIRECTLY CONNECT ARDUINO MOSI, MISO, CLK AND CS ON THE MEMORY PINS.</dd></dl>
+<p>If you have to convert 5 V signal to 3.3V signal, here's a simple and cheap circuit that works well.</p>
+<div class="image">
+<img src="mem_circuit.png" alt="mem_circuit.png"/>
+<div class="caption">
+Voltage convert flash memory</div></div>
+ <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csPin</td><td>: byte. pin used for flash memory chip select. </td></tr>
   </table>
   </dd>
 </dl>
@@ -644,13 +883,13 @@ Integration clamping diagram</div></div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8h_source.html">Rims.h</a></li>
-<li>C:/Users/Francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8cpp.html">Rims.cpp</a></li>
+<li>/home/francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8h_source.html">Rims.h</a></li>
+<li>/home/francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8cpp.html">Rims.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 20:21:44 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 19 2014 21:55:35 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

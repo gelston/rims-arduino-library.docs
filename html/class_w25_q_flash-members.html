@@ -27,6 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
    &#160;<span id="projectnumber">v1.6.1</span>
@@ -97,20 +98,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_w25_q_flash.html">W25QFlash</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_deselect</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>_getStatus</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_select</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>_sendCmdAddr</b>(byte cmd, unsigned long addr) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_deselect</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>_getStatus</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_select</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>_sendCmdAddr</b>(byte cmd, unsigned long addr) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>erase</b>(unsigned long addr, byte command=W25Q_ERASE_SECTOR) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>program</b>(unsigned long addr, byte buffer[], unsigned long n) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>read</b>(unsigned long addr, byte buffer[], unsigned long n) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setWriteEnable</b>(bool state=true) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>W25QFlash</b>(byte csPin) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setCSPin</b>(byte csPin) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setWriteEnable</b>(bool state=true) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>verifyMem</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>W25QFlash</b>(void) (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>waitFree</b>() (defined in <a class="el" href="class_w25_q_flash.html">W25QFlash</a>)</td><td class="entry"><a class="el" href="class_w25_q_flash.html">W25QFlash</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 20:21:44 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 19 2014 21:55:35 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
