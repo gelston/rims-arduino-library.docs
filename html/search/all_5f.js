@@ -8,7 +8,7 @@ var searchData=
   ['_5fmemaddbrewdata',['_memAddBrewData',['../class_rims.html#ad4bea25265fe6ad79032bfe16675a997',1,'Rims']]],
   ['_5fmemclearall',['_memClearAll',['../class_rims.html#a0badb9cf3544a5bfe42cbc0ae7ef81df',1,'Rims']]],
   ['_5fmemcountsessiondata',['_memCountSessionData',['../class_rims.html#a507fdf3be8b399af61d28a8d42f2b56c',1,'Rims']]],
-  ['_5fmemcountsessions',['_memCountSessions',['../class_rims.html#aab442b1fdf7e9e3f89d99d62043fde87',1,'Rims']]],
+  ['_5fmemcountsessions',['_memCountSessions',['../class_rims.html#a117d4db8e9acf3950ab37e3015870c63',1,'Rims']]],
   ['_5fmemdumpbrewdata',['_memDumpBrewData',['../class_rims.html#a0bb704603feb7f6a742d591c6f587d40',1,'Rims']]],
   ['_5fmeminit',['_memInit',['../class_rims.html#a194e641304e729b513ff4bc4cd0e60a5',1,'Rims']]],
   ['_5fmovecursorlr',['_moveCursorLR',['../class_u_i_rims.html#a5d7b7d586f6e9c3d98dec826dc098a27',1,'UIRims']]],
