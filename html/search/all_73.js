@@ -17,6 +17,7 @@ var searchData=
   ['settuningpid',['setTuningPID',['../class_rims.html#a6ca8887b7291dc0e013042e0c17fef31',1,'Rims']]],
   ['showheaterwarning',['showHeaterWarning',['../class_u_i_rims.html#aad256a9a67e556f8b7457b79b5315484',1,'UIRims']]],
   ['showidentscreen',['showIdentScreen',['../class_u_i_rims_ident.html#a6270131d71b510e793c1c0b5c29830d0',1,'UIRimsIdent']]],
+  ['showmemaccessscreen',['showMemAccessScreen',['../class_u_i_rims.html#abded2795bff048d61282b0497a546ff2',1,'UIRims']]],
   ['showpumpwarning',['showPumpWarning',['../class_u_i_rims.html#a59db7f3e0f03d9e0bd26e7d66bde1023',1,'UIRims']]],
   ['showserialwarning',['showSerialWarning',['../class_u_i_rims_ident.html#ae1282fa304be7c551d0079899e805f5a',1,'UIRimsIdent']]],
   ['showtempscreen',['showTempScreen',['../class_u_i_rims.html#aec36d9dd1b50e70a8a9ae2e3f711ec9e',1,'UIRims']]],
