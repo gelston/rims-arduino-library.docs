@@ -102,7 +102,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &quot;Arduino.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_u_i_rims_8h_source.html">utility/UIRims.h</a>&quot;</code><br/>
 <code>#include &quot;utility/PID_v1mod.h&quot;</code><br/>
-<code>#include &quot;utility/w25qflash.h&quot;</code><br/>
 </div>
 <p><a href="_rims_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -114,13 +113,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa5287895c5aff91b5b3579835160cb06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5287895c5aff91b5b3579835160cb06"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#aa5287895c5aff91b5b3579835160cb06">WITH_W25QFLASH</a></td></tr>
-<tr class="memdesc:aa5287895c5aff91b5b3579835160cb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">uncomment/comment to include/exclude flash memory <br/></td></tr>
-<tr class="separator:aa5287895c5aff91b5b3579835160cb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755b9528bf80376f0476829e8078a0da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a755b9528bf80376f0476829e8078a0da"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a755b9528bf80376f0476829e8078a0da">SAMPLETIME</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="memdesc:a755b9528bf80376f0476829e8078a0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample time for PID. Same time used for LCD refresh rate and data log rate [mSec]. <br/></td></tr>
+<tr class="memitem:a755b9528bf80376f0476829e8078a0da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a755b9528bf80376f0476829e8078a0da">SAMPLETIME</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a755b9528bf80376f0476829e8078a0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">uncomment/comment to include/exclude flash memory  <a href="#a755b9528bf80376f0476829e8078a0da">More...</a><br/></td></tr>
 <tr class="separator:a755b9528bf80376f0476829e8078a0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847381f6bf45c8c398dfe6f2aff10986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a847381f6bf45c8c398dfe6f2aff10986"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#a847381f6bf45c8c398dfe6f2aff10986">SSRWINDOWSIZE</a>&#160;&#160;&#160;5000</td></tr>
@@ -187,16 +181,32 @@ Macros</h2></td></tr>
 <tr class="memdesc:aacab1f5d4fadd423ae46a549735dcef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total bytes used per data point (at each second) <br/></td></tr>
 <tr class="separator:aacab1f5d4fadd423ae46a549735dcef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4842ac01255ab85a9d862cfc3d16cde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4842ac01255ab85a9d862cfc3d16cde"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#ab4842ac01255ab85a9d862cfc3d16cde">MEMSIZEBYTES</a>&#160;&#160;&#160;(1*1024*1024)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rims_8h.html#ab4842ac01255ab85a9d862cfc3d16cde">MEMSIZEBYTES</a>&#160;&#160;&#160;1048576</td></tr>
 <tr class="memdesc:ab4842ac01255ab85a9d862cfc3d16cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory size in bytes (Winbond W25QW25Q80BV : 1 MByte) <br/></td></tr>
 <tr class="separator:ab4842ac01255ab85a9d862cfc3d16cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_rims.html" title="Recirculation infusion mash system (RIMS) library for Arduino. ">Rims</a> class declaration. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a755b9528bf80376f0476829e8078a0da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAMPLETIME&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>uncomment/comment to include/exclude flash memory </p>
+<p>Sample time for PID. Same time used for LCD refresh rate and data log rate [mSec] </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2014 02:31:52 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 1 2014 22:37:31 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
