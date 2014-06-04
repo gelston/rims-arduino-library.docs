@@ -703,6 +703,7 @@ Voltage detection circuit</div></div>
 </div><div class="memdoc">
 
 <p>Set interrupt function for flow sensor. </p>
+<p>It is recommended to call pinMode(pinUsedForInterrupt,INPUT_PULLUP) in the setup() function of the main sketch. For exemple, on an Arduino UNO, if interrupt #1 is used for the flow sensor, you should call in setup() : pinMode(3,INPUT_PULLUP);</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interruptFlow</td><td>: byte. Interrupt pin number connected to the flow sensor. For more info : <a href="http://arduino.cc/en/Reference/attachInterrupt">http://arduino.cc/en/Reference/attachInterrupt</a> </td></tr>
@@ -929,7 +930,7 @@ Integration clamping diagram</div></div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2014 22:50:58 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 4 2014 17:54:06 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
