@@ -27,6 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">rims-arduino-library
    &#160;<span id="projectnumber">v2.0.1</span>
@@ -117,7 +118,7 @@ Inheritance diagram for Rims:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac370295657d50fed766ccded3e7da76c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ac370295657d50fed766ccded3e7da76c">Rims</a> (<a class="el" href="class_u_i_rims.html">UIRims</a> *uiRims, byte analogPinTherm, byte ssrPin, double *currentTemp, double *ssrControl, double *settedTemp)</td></tr>
-<tr class="memdesc:ac370295657d50fed766ccded3e7da76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR for flow sensor.  <a href="#ac370295657d50fed766ccded3e7da76c">More...</a><br/></td></tr>
+<tr class="memdesc:ac370295657d50fed766ccded3e7da76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ac370295657d50fed766ccded3e7da76c">More...</a><br/></td></tr>
 <tr class="separator:ac370295657d50fed766ccded3e7da76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972b17ec148f68ac816ad8a4a29a802d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a972b17ec148f68ac816ad8a4a29a802d">setThermistor</a> (float steinhartCoefs[], float res1, float fineTune=0)</td></tr>
 <tr class="memdesc:a972b17ec148f68ac816ad8a4a29a802d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thermistor parameters.  <a href="#a972b17ec148f68ac816ad8a4a29a802d">More...</a><br/></td></tr>
@@ -183,9 +184,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a507fdf3be8b399af61d28a8d42f2b56c"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a507fdf3be8b399af61d28a8d42f2b56c">_memCountSessionData</a> ()</td></tr>
 <tr class="memdesc:a507fdf3be8b399af61d28a8d42f2b56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count how many data point were taken.  <a href="#a507fdf3be8b399af61d28a8d42f2b56c">More...</a><br/></td></tr>
 <tr class="separator:a507fdf3be8b399af61d28a8d42f2b56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194e641304e729b513ff4bc4cd0e60a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a194e641304e729b513ff4bc4cd0e60a5">_memInit</a> ()</td></tr>
-<tr class="memdesc:a194e641304e729b513ff4bc4cd0e60a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize flash memory.  <a href="#a194e641304e729b513ff4bc4cd0e60a5">More...</a><br/></td></tr>
-<tr class="separator:a194e641304e729b513ff4bc4cd0e60a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e54c17e8781c4ed6c20e1787ef8c82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#a95e54c17e8781c4ed6c20e1787ef8c82">_memInit</a> (float sp)</td></tr>
+<tr class="memdesc:a95e54c17e8781c4ed6c20e1787ef8c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize flash memory.  <a href="#a95e54c17e8781c4ed6c20e1787ef8c82">More...</a><br/></td></tr>
+<tr class="separator:a95e54c17e8781c4ed6c20e1787ef8c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4bea25265fe6ad79032bfe16675a997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rims.html#ad4bea25265fe6ad79032bfe16675a997">_memAddBrewData</a> (float time, unsigned int cv, float pv, float flow, float timerRemaining)</td></tr>
 <tr class="memdesc:ad4bea25265fe6ad79032bfe16675a997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add data point to the flash memory.  <a href="#ad4bea25265fe6ad79032bfe16675a997">More...</a><br/></td></tr>
 <tr class="separator:ad4bea25265fe6ad79032bfe16675a997"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +262,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>ISR for flow sensor. </p>
-<p>Constructor </p>
+<p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uiRims</td><td>: UIRims*. Pointer to <a class="el" href="class_u_i_rims.html" title="Library to menage LCD and keypad for Rims library. ">UIRims</a> instance </td></tr>
@@ -392,7 +392,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 </div><div class="memdoc">
 
 <p>Add data point to the flash memory. </p>
-<p>Five values is added at _memNextAddr, 18 bytes in total. Temperature setpoint (float : 4 bytes) is saved only once, at the beginning of the brew sessions in <a class="el" href="class_rims.html#a194e641304e729b513ff4bc4cd0e60a5" title="Initialize flash memory. ">_memInit()</a>. For exemple, for the first data (starting at ADDRBREWDATA or 0x001100) of the first brew session, the memory map would be :</p>
+<p>Five values is added at _memNextAddr, 18 bytes in total. Temperature setpoint (float : 4 bytes) is saved only once, at the beginning of the brew sessions in <a class="el" href="class_rims.html#a95e54c17e8781c4ed6c20e1787ef8c82" title="Initialize flash memory. ">_memInit()</a>. For exemple, for the first data (starting at ADDRBREWDATA or 0x001100) of the first brew session, the memory map would be :</p>
 <table class="doxtable">
 <tr>
 <th>Address </th><th>Data </th><th>Size  </th></tr>
@@ -507,7 +507,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 
 </div>
 </div>
-<a class="anchor" id="a194e641304e729b513ff4bc4cd0e60a5"></a>
+<a class="anchor" id="a95e54c17e8781c4ed6c20e1787ef8c82"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -517,7 +517,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
         <tr>
           <td class="memname">void Rims::_memInit </td>
           <td>(</td>
-          <td class="paramname">)</td><td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sp</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
@@ -529,7 +530,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RimsIdent</b></td></
 </div><div class="memdoc">
 
 <p>Initialize flash memory. </p>
-<p>Verify where to store the new datas and saved temperature setpoint at the beginning of the datablock. </p>
+<p>Verify where to store the new datas and saved temperature setpoint at the beginning of the datablock.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sp</td><td>: float. Temperature setpoint stored at the beginning of the datablock. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -923,13 +930,13 @@ Integration clamping diagram</div></div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8h_source.html">Rims.h</a></li>
-<li>C:/Users/Francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8cpp.html">Rims.cpp</a></li>
+<li>/home/francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8h_source.html">Rims.h</a></li>
+<li>/home/francis/Dropbox/Arduino/libraries/rims/<a class="el" href="_rims_8cpp.html">Rims.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 13 2014 18:08:47 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 14 2014 14:13:28 for rims-arduino-library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
